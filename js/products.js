@@ -44,6 +44,7 @@ let bread4 = new Foods("Cheesecake", "Picard", "Fryst cheesecake, bara att tina 
 let bakery = [bread1, bread2, bread3, bread4];
 
 $(function() {
+    console.log(bakery, fish, dairy, bird, meat);
 
     $("#home").on('click', function() { // Öppnas samma fönster
         window.location.assign('../index.html');
