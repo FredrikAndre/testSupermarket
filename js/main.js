@@ -25,6 +25,10 @@ $(function() {
         window.location.assign('html/cashregister.html');
     });
 
+    $(".navbar-brand").on('click', function() {
+        window.location.assign('index.html');
+    });
+
     //Jumbotron
     $("<h1>").addClass("display-4").text("Välkommen till Supermarket!").appendTo(".jumbotron");
     $("<p>").addClass("lead pb-3").text("Supermarket! är din mathandel på nätet. Vi har Sveriges bredaste utbud av mat och dryck, till de lägsta priserna.").appendTo(".jumbotron");

@@ -1,5 +1,5 @@
 class Foods {
-    constructor(title, company, info, price, photo,quantity) {
+    constructor(title, company, info, price, photo, quantity) {
         this.title = title;
         this.company = company;
         this.info = info;
@@ -46,7 +46,6 @@ let bakery = [bread1, bread2, bread3, bread4];
 
 $(function() {
 
-
     $("#home").on('click', function() { // Öppnas samma fönster
         window.location.assign('../index.html');
     });
@@ -54,8 +53,9 @@ $(function() {
         window.location.assign('../html/cashregister.html');
     });
 
-    // Producthero
-    $("div").addClass("")
+    $(".navbar-brand").on('click', function() {
+        window.location.assign('../index.html');
+    });
 
     // Products Arrays
     $.each(meat, (i, items) => {
@@ -130,50 +130,44 @@ $(function() {
 
 
 
-$.each($(".meatBtn"), (i, product)=>{
-$(product)
-.on('click', ()=> {
- console.log(meat[i]);
-             })
-            
-            });
+    $.each($(".meatBtn"), (i, product)=>{
+    $(product)
+    .on('click', ()=> {
+    console.log(meat[i]);
+                })
+                
+                });
 
-$.each($(".birdBtn"), (i, product)=>{
-$(product)
-.on('click', ()=> {
- console.log(bird[i]);
-             })
-            
-            });
+    $.each($(".birdBtn"), (i, product)=>{
+    $(product)
+    .on('click', ()=> {
+    console.log(bird[i]);
+                })
+                
+                });
 
-$.each($(".dairyBtn"), (i, product)=>{
-$(product)
-.on('click', ()=> {
- console.log(dairy[i]);
-             })
-            
-            });
+    $.each($(".dairyBtn"), (i, product)=>{
+    $(product)
+    .on('click', ()=> {
+    console.log(dairy[i]);
+                })
+                
+                });
 
-$.each($(".fishBtn"), (i, product)=>{
-$(product)
-.on('click', ()=> {
- console.log(fish[i]);
-             })
-            
-            });
+    $.each($(".fishBtn"), (i, product)=>{
+    $(product)
+    .on('click', ()=> {
+    console.log(fish[i]);
+                })
+                
+                });
 
-$.each($(".bakeryBtn"), (i, product)=>{
-$(product)
-.on('click', ()=> {
- console.log(bakery[i]);
-             })
-            
-            });
-
-
-
-
-
-
+    $.each($(".bakeryBtn"), (i, product)=>{
+    $(product)
+    .on('click', ()=> {
+    console.log(bakery[i]);
+                })
+                
+                });
 
 });
