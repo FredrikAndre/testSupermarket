@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    background-color: #00239CFF;;
+    background-color: #fff;
     
     .navbar-brand {
         padding: 0;
@@ -25,7 +25,7 @@ body {
     }
 
     #home {
-        color: #F7F7F8;
+        color: #000;
         cursor: pointer;
     }
     #home:hover {
@@ -35,7 +35,7 @@ body {
     }
 
     #products {
-        color: #F7F7F8;
+        color: #000;
         cursor: pointer;
     }
     #products:hover {
@@ -44,7 +44,7 @@ body {
         opacity: 0.5;
     }
     #checkout {
-        color: #F7F7F8;
+        color: #000;
         cursor: pointer;
     }
     #checkout:hover {
@@ -111,6 +111,25 @@ body {
     }
 }
 
+#producthero {
+    background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
+    margin-top: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 5px;
+    @media screen and (min-width: 768px) {
+        padding: 4rem 4rem 0 4rem;
+    }
+    h2 {
+        color: $whitetext;
+        text-shadow: $boxshadowtext;
+        font-size: 0.8rem;
+        @media screen and (min-width: 768px) {
+          font-size: 2rem;
+        }
+    }
+    
+}
+
 #meatproducts {
     .card {
         .card-body {
@@ -138,7 +157,16 @@ body {
                 @media screen and (min-width: 992px) {
                     font-size: 1rem;
                 }
-            }       
+            }
+            #buy {
+                font-size: 0.6rem;
+                @media screen and (min-width: 576px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }     
         }
     }
 }
@@ -169,7 +197,16 @@ body {
                 @media screen and (min-width: 992px) {
                     font-size: 1rem;
                 }
-            }       
+            }
+            #buy {
+                font-size: 0.6rem;
+                @media screen and (min-width: 576px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }           
         }
     }
 }
@@ -200,7 +237,16 @@ body {
                 @media screen and (min-width: 992px) {
                     font-size: 1rem;
                 }
-            }       
+            }
+            #buy {
+                font-size: 0.6rem;
+                @media screen and (min-width: 576px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }           
         }
     }
 }
@@ -231,7 +277,16 @@ body {
                 @media screen and (min-width: 992px) {
                     font-size: 1rem;
                 }
-            }       
+            }
+            #buy {
+                font-size: 0.6rem;
+                @media screen and (min-width: 576px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }            
         }
     }
 }
@@ -262,7 +317,16 @@ body {
                 @media screen and (min-width: 992px) {
                     font-size: 1rem;
                 }
-            }       
+            }
+            #buy {
+                font-size: 0.6rem;
+                @media screen and (min-width: 576px) {
+                    font-size: 0.8rem;
+                }
+                @media screen and (min-width: 992px) {
+                    font-size: 1rem;
+                }
+            }           
         }
     }
 }
@@ -303,7 +367,7 @@ body {
 #footertop {
     margin-top: 3rem;
     padding: 2rem;
-    background-color: #00239CFF;
+    background-color: #D3D3D3;
     color: $whitetext;
     .container {
 

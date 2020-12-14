@@ -52,6 +52,10 @@ $(function() {
         window.location.assign('../html/cashregister.html');
     });
 
+    // Producthero
+    $("div").addClass("")
+
+    // Products Arrays
     $.each(meat, (i, items) => {
         let colDiv = $("<div>").addClass("col mb-4").appendTo(".featuremeat");
         let cardDiv = $("<div>").addClass("card h-100").appendTo(colDiv);
