@@ -37,7 +37,7 @@ let fish4 = new Foods("Laxblini", "Egen Deli", "Vår egen Delis utsökta laxblin
 
 let fish = [fish1, fish2, fish3, fish4];
 
-let bread1 = new Foods("Briochefralla", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "../images/bakery/brioche.jpg",0)
+let bread1 = new Foods("Brioche", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "../images/bakery/brioche.jpg",0)
 let bread2 = new Foods("Croissant", "Picard", "Frysta croissanter, värms i ugn. 4st per förpackning.", 36, "../images/bakery/croissant.jpg",0)
 let bread3 = new Foods("Grekiskt Lantbröd", "Pågen", "Saftig och god limpa. ca 450 gram/förpackning", 28, "../images/bakery/breadloaf.jpg",0)
 let bread4 = new Foods("Cheesecake", "Picard", "Fryst cheesecake, bara att tina upp. ca 360 gram/förpackning", 89, "../images/bakery/cheesecake.jpg",0)

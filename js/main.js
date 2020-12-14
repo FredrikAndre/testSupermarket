@@ -39,7 +39,6 @@ $(function() {
     $("<div>").addClass("weektext col mb-1 mt-3 text-center").appendTo(".divider");
     $("<h5>").text("Veckans Utvalda Produkter").appendTo(".weektext");
 
-    
     //Startpage Cards
     $.each(food, (i, items) => {
     let colDiv = $("<div>").addClass("col mb-4").appendTo(".feature");

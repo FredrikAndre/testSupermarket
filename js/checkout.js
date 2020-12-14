@@ -11,11 +11,14 @@ $(function() {
         window.location.assign('../index.html');
     });
 
+    $("<button>").addClass("btn btn-danger mr-3").attr('id', "toproducts").text("Tillbaka").appendTo(".paybtn");
+    $("#toproducts").on('click', function() {
+        window.location.assign('../html/products.html');
+    });
     // Button checkout to "Thank you side"
-    $("<button>").addClass("btn btn-warning").attr('id', "checkoutdone").text("Betala").appendTo(".paybtn");
+    $("<button>").addClass("btn btn-success").attr('id', "checkoutdone").text("Betala").appendTo(".paybtn");
     $("#checkoutdone").on('click', function() {
         window.location.assign('../html/thankyou.html');
     });
 
-    
 });
