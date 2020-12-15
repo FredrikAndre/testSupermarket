@@ -182,8 +182,3 @@ $.each(cart, (i, cartItem) =>{
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-
-    
-
-});
-
