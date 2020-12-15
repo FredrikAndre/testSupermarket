@@ -25,6 +25,10 @@ $(function() {
         window.location.assign('html/cashregister.html');
     });
 
+    $(".navbar-brand").on('click', function() {
+        window.location.assign('index.html');
+    });
+
     //Jumbotron
     $("<h1>").addClass("display-4").text("Välkommen till Supermarket!").appendTo(".jumbotron");
     $("<p>").addClass("lead pb-3").text("Supermarket! är din mathandel på nätet. Vi har Sveriges bredaste utbud av mat och dryck, till de lägsta priserna.").appendTo(".jumbotron");
@@ -35,7 +39,6 @@ $(function() {
     $("<div>").addClass("weektext col mb-1 mt-3 text-center").appendTo(".divider");
     $("<h5>").text("Veckans Utvalda Produkter").appendTo(".weektext");
 
-    
     //Startpage Cards
     $.each(food, (i, items) => {
     let colDiv = $("<div>").addClass("col mb-4").appendTo(".feature");

@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  background-color: #00239CFF;
+  background-color: #fff;
 }
 
 .navbar .navbar-brand {
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar #home {
-  color: #F7F7F8;
+  color: #000;
   cursor: pointer;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar #products {
-  color: #F7F7F8;
+  color: #000;
   cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar #checkout {
-  color: #F7F7F8;
+  color: #000;
   cursor: pointer;
 }
 
@@ -121,6 +121,31 @@ body {
   }
 }
 
+#producthero {
+  background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
+  margin-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #producthero {
+    padding: 4rem 4rem 0 4rem;
+  }
+}
+
+#producthero h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #producthero h2 {
+    font-size: 2rem;
+  }
+}
+
 #meatproducts .card .card-body p {
   font-size: 0.6rem;
 }
@@ -146,6 +171,22 @@ body {
 
 @media screen and (min-width: 992px) {
   #meatproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#meatproducts .card .card-footer #buy {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-footer #buy {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meatproducts .card .card-footer #buy {
     font-size: 1rem;
   }
 }
@@ -179,6 +220,22 @@ body {
   }
 }
 
+#birdproducts .card .card-footer #buy {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-footer #buy {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #birdproducts .card .card-footer #buy {
+    font-size: 1rem;
+  }
+}
+
 #dairyproducts .card .card-body p {
   font-size: 0.6rem;
 }
@@ -204,6 +261,22 @@ body {
 
 @media screen and (min-width: 992px) {
   #dairyproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#dairyproducts .card .card-footer #buy {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-footer #buy {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #dairyproducts .card .card-footer #buy {
     font-size: 1rem;
   }
 }
@@ -237,6 +310,22 @@ body {
   }
 }
 
+#fishproducts .card .card-footer #buy {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-footer #buy {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #fishproducts .card .card-footer #buy {
+    font-size: 1rem;
+  }
+}
+
 #bakeryproducts .card .card-body p {
   font-size: 0.6rem;
 }
@@ -262,6 +351,22 @@ body {
 
 @media screen and (min-width: 992px) {
   #bakeryproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#bakeryproducts .card .card-footer #buy {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-footer #buy {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #bakeryproducts .card .card-footer #buy {
     font-size: 1rem;
   }
 }
@@ -309,7 +414,7 @@ body {
 #footertop {
   margin-top: 3rem;
   padding: 2rem;
-  background-color: #00239CFF;
+  background-color: #A9A9A9;
   color: #fff;
 }
 

@@ -37,14 +37,17 @@ let fish4 = new Foods("Laxblini", "Egen Deli", "Vår egen Delis utsökta laxblin
 
 let fish = [fish1, fish2, fish3, fish4];
 
-let bread1 = new Foods("Briochefralla", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "../images/bakery/brioche.jpg", 0)
-let bread2 = new Foods("Croissant", "Picard", "Frysta croissanter, värms i ugn. 4st per förpackning.", 36, "../images/bakery/croissant.jpg", 0)
-let bread3 = new Foods("Grekiskt Lantbröd", "Pågen", "Saftig och god limpa. ca 450 gram/förpackning", 28, "../images/bakery/breadloaf.jpg", 0)
-let bread4 = new Foods("Cheesecake", "Picard", "Fryst cheesecake, bara att tina upp. ca 360 gram/förpackning", 89, "../images/bakery/cheesecake.jpg", 0)
+
+let bread1 = new Foods("Brioche", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "../images/bakery/brioche.jpg",0)
+let bread2 = new Foods("Croissant", "Picard", "Frysta croissanter, värms i ugn. 4st per förpackning.", 36, "../images/bakery/croissant.jpg",0)
+let bread3 = new Foods("Grekiskt Lantbröd", "Pågen", "Saftig och god limpa. ca 450 gram/förpackning", 28, "../images/bakery/breadloaf.jpg",0)
+let bread4 = new Foods("Cheesecake", "Picard", "Fryst cheesecake, bara att tina upp. ca 360 gram/förpackning", 89, "../images/bakery/cheesecake.jpg",0)
+
 
 let bakery = [bread1, bread2, bread3, bread4];
 
 let allItems = [meat1, meat2, meat3, meat4, bird1, bird2, bird3, bird4, dairy1, dairy2, dairy3, dairy4, fish1, fish2, fish3, fish4, bread1, bread2, bread3, bread4];
+
 
 let cart = [];
 
@@ -54,13 +57,21 @@ $(function () {
 
 
 
-    $("#home").on('click', function () { // Öppnas samma fönster
+ 
+
+    $("#home").on('click', function() { // Öppnas samma fönster
+
         window.location.assign('../index.html');
     });
     $("#checkout").on('click', function () { // Öppnas samma fönster
         window.location.assign('../html/cashregister.html');
     });
 
+    $(".navbar-brand").on('click', function() {
+        window.location.assign('../index.html');
+    });
+
+    // Products Arrays
     $.each(meat, (i, items) => {
         let colDiv = $("<div>").addClass("col mb-4").appendTo(".featuremeat");
         let cardDiv = $("<div>").addClass("card h-100").appendTo(colDiv);
@@ -133,6 +144,7 @@ $(function () {
 
 
 
+
     $.each($(".buyBtn"), (i, product) => {
         $(product)
             .on('click', () => {
@@ -169,4 +181,9 @@ $.each(cart, (i, cartItem) =>{
     // 3. Spara cart i localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
+    
+
+});
 
