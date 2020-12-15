@@ -60,6 +60,10 @@ body {
   opacity: 0.5;
 }
 
+.navbar #cartbutton .fas {
+  font-size: 1.2rem;
+}
+
 .jumbotron {
   background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
 }
