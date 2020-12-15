@@ -185,5 +185,5 @@ $.each(cart, (i, cartItem) =>{
 
     
 
-});
+
 
