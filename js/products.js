@@ -55,10 +55,6 @@ $(function () {
 
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-
-
- 
-
     $("#home").on('click', function() { // Öppnas samma fönster
 
         window.location.assign('../index.html');
@@ -143,8 +139,6 @@ $(function () {
     });
 
 
-
-
     $.each($(".buyBtn"), (i, product) => {
         $(product)
             .on('click', () => {
@@ -154,11 +148,7 @@ $(function () {
 
     });
 
-
-
-
 });
-
 
 function generateCart(product) {
 

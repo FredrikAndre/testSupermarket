@@ -1,5 +1,8 @@
 $(function() {
 
+    $(".navbar-brand").on('click', function() {
+        window.location.assign('../index.html');
+    });
     $("#home").on('click', function() { // Öppnas samma fönster
         window.location.assign('../index.html');
     });
@@ -8,10 +11,6 @@ $(function() {
     });
     $("#checkout").on('click', function() { // Öppnas samma fönster
         window.location.assign('../html/cashregister.html');
-    });
-
-    $(".navbar-brand").on('click', function() {
-        window.location.assign('../index.html');
     });
 
     // Should be made into forloop with cart-items.
