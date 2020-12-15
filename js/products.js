@@ -180,10 +180,4 @@ $.each(cart, (i, cartItem) =>{
 
     // 3. Spara cart i localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-
-    
-
-
-
+};
