@@ -514,3 +514,14 @@ body {
     font-size: 1rem;
   }
 }
+
+/* Cashregister Page */
+.cartcontainer {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  .cartcontainer {
+    font-size: 1rem;
+  }
+}

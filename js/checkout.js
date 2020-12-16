@@ -13,7 +13,7 @@ $(function() {
     $(".navbar-brand").on('click', function() {
         window.location.assign('../index.html');
     });
-
+    // Button back to "product side"
     $("<button>").addClass("btn btn-danger mr-3").attr('id', "toproducts").text("Tillbaka").appendTo(".paybtn");
     $("#toproducts").on('click', function() {
         window.location.assign('../html/products.html');
@@ -42,11 +42,11 @@ $.each(cart, (i, product)=>{
     totalValue += product.price * product.quantity;
     });
 
-    $("<tr>").attr("id", "cartTotalRow").appendTo(".cartcontainer");
-    $("<th>").text("Total").appendTo("#cartTotalRow");
-    $("<td>").text("-").appendTo("#cartTotalRow");
-    $("<td>").text("-").appendTo("#cartTotalRow");
-    $("<td>").text(totalValue + " kr").appendTo("#cartTotalRow");
+    $("<tr>").attr("id", "carttotalrow").appendTo(".cartcontainer");
+    $("<th>").text("Total").appendTo("#carttotalrow");
+    $("<td>").text("-").appendTo("#carttotalrow");
+    $("<td>").text("-").appendTo("#carttotalrow");
+    $("<td>").text(totalValue + " kr").appendTo("#carttotalrow");
 
 }
  
