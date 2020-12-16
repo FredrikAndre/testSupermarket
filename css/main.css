@@ -1,3 +1,6 @@
+/* Common Mixins */
+/* Navbar Mixins */
+/* Media Query*/
 /* Global Rules */
 * {
   margin: 0;
@@ -58,10 +61,6 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.5;
-}
-
-.navbar #cartbutton .fas {
-  font-size: 1.2rem;
 }
 
 #footertop {
@@ -188,8 +187,34 @@ body {
   cursor: pointer;
 }
 
+#featureproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#featureproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #featureproducts .card .card-body p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #featureproducts .card .image img {
@@ -290,8 +315,34 @@ body {
   }
 }
 
+#meatproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#meatproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #meatproducts .card .card-body p {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #meatproducts .card .image img {
@@ -335,8 +386,34 @@ body {
   }
 }
 
+#birdproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#birdproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #birdproducts .card .card-body p {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #birdproducts .card .image img {
@@ -380,8 +457,34 @@ body {
   }
 }
 
+#dairyproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#dairyproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #dairyproducts .card .card-body p {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #dairyproducts .card .image img {
@@ -425,8 +528,34 @@ body {
   }
 }
 
+#fishproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#fishproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #fishproducts .card .card-body p {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #fishproducts .card .image img {
@@ -470,8 +599,34 @@ body {
   }
 }
 
+#bakeryproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#bakeryproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
 #bakeryproducts .card .card-body p {
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #bakeryproducts .card .image img {
@@ -516,12 +671,28 @@ body {
 }
 
 /* Cashregister Page */
-.cartcontainer {
-  font-size: 0.6rem;
+#carthero {
+  margin-top: 2rem;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 576px) {
-  .cartcontainer {
+  #carthero {
+    font-size: 1rem;
+  }
+}
+
+#carthero .fas {
+  color: #00FF00;
+  margin-right: 0.5rem;
+}
+
+#carttable, #carttable.cartcontainer {
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  #carttable, #carttable.cartcontainer {
     font-size: 1rem;
   }
 }
