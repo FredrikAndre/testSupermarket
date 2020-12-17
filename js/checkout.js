@@ -43,12 +43,12 @@ $.each(cart, (i, product)=> {
     $("<td>").text(product.title).appendTo(myTR);
     $("<td>").text(product.price + " kr").appendTo(myTR);
 
-    let addButton = $("<i>").addClass("fas fa-plus-square").on('click', () => { addToCart(i); });
-    let decreaseButton = $("<i>").addClass("fas fa-minus-square").on('click', () => { decreaseFromCart(i); });
+    let addButton = $("<i>").addClass("add fas fa-plus-square").on('click', () => { addToCart(i); });
+    let decreaseButton = $("<i>").addClass("decrease fas fa-minus-square").on('click', () => { decreaseFromCart(i); });
     $("<td>").text(product.quantity).append(addButton).append(decreaseButton).appendTo(myTR);
     $("<td>").text(product.price * product.quantity + " kr").appendTo(myTR);
 
-    let removeButton = $("<i>").addClass("fas fa-trash").on('click', () => { removeFromCart(i); });
+    let removeButton = $("<i>").addClass("delete fas fa-trash").on('click', () => { removeFromCart(i); });
     $("<td>").append(removeButton).appendTo(myTR);
 
     totalValue += product.price * product.quantity;
@@ -60,6 +60,7 @@ $.each(cart, (i, product)=> {
     $("<td>").appendTo("#carttotalrow");
     $("<td>").appendTo("#carttotalrow");
     $("<td>").text(totalValue + " kr").appendTo("#carttotalrow");
+    $("<td>").appendTo("#carttotalrow");
 
 }
 
@@ -78,6 +79,5 @@ function decreaseFromCart(i) {
     if (cart[i].quantity < 1) {
         removeFromCart(i);
     } 
-    console.log(cart);
     generateCheckout();
 }

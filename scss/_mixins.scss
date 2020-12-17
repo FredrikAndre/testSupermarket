@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+@mixin pointer {
+    cursor: pointer;
+}
+
 /* Navbar Mixins */
 @mixin navlink-spec{
     color: #000;

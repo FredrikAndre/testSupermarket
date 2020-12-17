@@ -1,7 +1,7 @@
 $(function() {
 
     $(".navbar-brand").on('click', function() {
-        window.location.assign('../index.html');
+        window.location.assign('../index.html'); 
     });
     $("#home").on('click', function() { // Öppnas samma fönster
         window.location.assign('../index.html');
