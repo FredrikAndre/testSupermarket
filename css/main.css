@@ -696,3 +696,24 @@ body {
     font-size: 1rem;
   }
 }
+
+
+
+@media screen and (min-width: 576px){
+  .checkoutImg{
+    height:50px;
+    width:50px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .checkoutImg{
+    height:37px;
+    width:37px;
+    border-radius: 10px;
+  }
+}
+
+
+

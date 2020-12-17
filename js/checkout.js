@@ -41,6 +41,7 @@ $.each(cart, (i, product)=> {
     .appendTo(".cartcontainer");
 
     $("<td>").text(product.title).appendTo(myTR);
+    $("<img>").addClass("checkoutImg").attr("src", product.photo).appendTo(myTR);
     $("<td>").text(product.price + " kr").appendTo(myTR);
 
     let addButton = $("<i>").addClass("fas fa-plus-square").on('click', () => { addToCart(i); });
@@ -57,6 +58,7 @@ $.each(cart, (i, product)=> {
 
     $("<tr>").attr("id", "carttotalrow").appendTo(".cartcontainer");
     $("<th>").text("Total Summa").appendTo("#carttotalrow");
+    $("<td>").appendTo("#carttotalrow");
     $("<td>").appendTo("#carttotalrow");
     $("<td>").appendTo("#carttotalrow");
     $("<td>").text(totalValue + " kr").appendTo("#carttotalrow");
