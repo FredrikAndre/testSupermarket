@@ -56,7 +56,6 @@ $(function () {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     $("#home").on('click', function() { // Öppnas samma fönster
-
         window.location.assign('../index.html');
     });
     $("#checkout").on('click', function () { // Öppnas samma fönster
@@ -79,7 +78,7 @@ $(function () {
         $("<h6>").html(items.company).appendTo(textDiv);
         $("<p>").html(items.info).appendTo(textDiv);
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
-        $("<button>").addClass("btn btn-success btn-md mt-2 buyBtn").text("Lägg i varukorg").appendTo(footerDiv);
+        $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
 
     $.each(bird, (i, items) => {
@@ -93,7 +92,7 @@ $(function () {
         $("<h6>").html(items.company).appendTo(textDiv);
         $("<p>").html(items.info).appendTo(textDiv);
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
-        $("<button>").addClass("btn btn-success btn-md mt-2 buyBtn").text("Lägg i varukorg").appendTo(footerDiv);
+        $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
 
     $.each(dairy, (i, items) => {
@@ -107,7 +106,7 @@ $(function () {
         $("<h6>").html(items.company).appendTo(textDiv);
         $("<p>").html(items.info).appendTo(textDiv);
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
-        $("<button>").addClass("btn btn-success btn-md mt-2 buyBtn").text("Lägg i varukorg").appendTo(footerDiv);
+        $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
 
     $.each(fish, (i, items) => {
@@ -121,7 +120,7 @@ $(function () {
         $("<h6>").html(items.company).appendTo(textDiv);
         $("<p>").html(items.info).appendTo(textDiv);
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
-        $("<button>").addClass("btn btn-success btn-md mt-2 buyBtn").text("Lägg i varukorg").appendTo(footerDiv);
+        $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
 
     $.each(bakery, (i, items) => {
@@ -135,17 +134,16 @@ $(function () {
         $("<h6>").html(items.company).appendTo(textDiv);
         $("<p>").html(items.info).appendTo(textDiv);
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
-        $("<button>").addClass("btn btn-success btn-md mt-2 buyBtn").text("Lägg i varukorg").appendTo(footerDiv);
+        $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
 
 
-    $.each($(".buyBtn"), (i, product) => {
+    $.each($(".buybtn"), (i, product) => {
         $(product)
             .on('click', () => {
 
                 generateCart(allItems[i]);
-            })
-
+            });
     });
 
 });
@@ -154,20 +152,17 @@ function generateCart(product) {
 
     let foundProduct = false;
 
-
-$.each(cart, (i, cartItem) =>{
-    if(cartItem.title == product.title){
-        cartItem.quantity++;
-        foundProduct = true;
-    }
-});
-
+    $.each(cart, (i, cartItem) => {
+        if(cartItem.title == product.title) {
+            cartItem.quantity++;
+            foundProduct = true;
+        }
+    });
 
     if (!foundProduct) {
         product.quantity = 1;
         cart.push(product);
     };
 
-    // 3. Spara cart i localStorage
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart)); // 3. Spara cart i localStorage
 };

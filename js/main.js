@@ -11,7 +11,7 @@ class Foods {
 let f1 = new Foods("Kycklingfilé", "Kronfågel", "Färsk kycklingfilé. ca 900 gram/förpackning.", 99, "./images/cards/chickenbreast.jpg");
 let f2 = new Foods("Ägg", "Kronägg", "Ekologiska ägg från frigående höns med tillgång till utevistelse. 15st/förpackning.", 35, "./images/cards/eggs.jpg");
 let f3 = new Foods("Köttfärs", "Garant", "Svensk köttfärs. 500 gram/förpackning.", 59, "./images/cards/mincedbeef.jpg");
-let f4 = new Foods("Briochefralla", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "./images/cards/brioche.jpg")
+let f4 = new Foods("Brioche", "Eget Bageri", "Mjuka och färskbakade briochebröd. Pris per st.", 5, "./images/cards/brioche.jpg")
 
 let food = [f1, f2, f3, f4];
 

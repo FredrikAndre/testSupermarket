@@ -1,3 +1,6 @@
+/* Common Mixins */
+/* Navbar Mixins */
+/* Media Query*/
 /* Global Rules */
 * {
   margin: 0;
@@ -58,361 +61,6 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.5;
-}
-
-.navbar #cartbutton .fas {
-  font-size: 1.2rem;
-}
-
-.jumbotron {
-  background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
-}
-
-.jumbotron h1 {
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 2.5rem;
-}
-
-.jumbotron p {
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-#dividertext h5 {
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: underline;
-}
-
-#featureproducts .card {
-  cursor: pointer;
-}
-
-#featureproducts .card .card-body p {
-  font-size: 0.7rem;
-}
-
-#featureproducts .card .image img {
-  width: 100%;
-}
-
-#featureproducts .card:hover {
-  opacity: 0.7;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#featureproducts .card-footer p {
-  font-size: 0.6rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: red;
-  color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  #featureproducts .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #featureproducts .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#producthero {
-  background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
-  margin-top: 2rem;
-  padding: 2rem 2rem 0 2rem;
-  border-radius: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  #producthero {
-    padding: 4rem 4rem 0 4rem;
-  }
-}
-
-#producthero h2 {
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 0.8rem;
-}
-
-@media screen and (min-width: 768px) {
-  #producthero h2 {
-    font-size: 2rem;
-  }
-}
-
-#meatproducts .card .card-body p {
-  font-size: 0.6rem;
-}
-
-#meatproducts .card .image img {
-  width: 100%;
-}
-
-#meatproducts .card .card-footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #FF7F50;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 768px) {
-  #meatproducts .card .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #meatproducts .card .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#meatproducts .card .card-footer #buy {
-  font-size: 0.6rem;
-}
-
-@media screen and (min-width: 576px) {
-  #meatproducts .card .card-footer #buy {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #meatproducts .card .card-footer #buy {
-    font-size: 1rem;
-  }
-}
-
-#birdproducts .card .card-body p {
-  font-size: 0.6rem;
-}
-
-#birdproducts .card .image img {
-  width: 100%;
-}
-
-#birdproducts .card .card-footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #FF7F50;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 768px) {
-  #birdproducts .card .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #birdproducts .card .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#birdproducts .card .card-footer #buy {
-  font-size: 0.6rem;
-}
-
-@media screen and (min-width: 576px) {
-  #birdproducts .card .card-footer #buy {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #birdproducts .card .card-footer #buy {
-    font-size: 1rem;
-  }
-}
-
-#dairyproducts .card .card-body p {
-  font-size: 0.6rem;
-}
-
-#dairyproducts .card .image img {
-  width: 100%;
-}
-
-#dairyproducts .card .card-footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #FF7F50;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 768px) {
-  #dairyproducts .card .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #dairyproducts .card .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#dairyproducts .card .card-footer #buy {
-  font-size: 0.6rem;
-}
-
-@media screen and (min-width: 576px) {
-  #dairyproducts .card .card-footer #buy {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #dairyproducts .card .card-footer #buy {
-    font-size: 1rem;
-  }
-}
-
-#fishproducts .card .card-body p {
-  font-size: 0.6rem;
-}
-
-#fishproducts .card .image img {
-  width: 100%;
-}
-
-#fishproducts .card .card-footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #FF7F50;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 768px) {
-  #fishproducts .card .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #fishproducts .card .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#fishproducts .card .card-footer #buy {
-  font-size: 0.6rem;
-}
-
-@media screen and (min-width: 576px) {
-  #fishproducts .card .card-footer #buy {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #fishproducts .card .card-footer #buy {
-    font-size: 1rem;
-  }
-}
-
-#bakeryproducts .card .card-body p {
-  font-size: 0.6rem;
-}
-
-#bakeryproducts .card .image img {
-  width: 100%;
-}
-
-#bakeryproducts .card .card-footer p {
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  text-align: center;
-  background-color: #FF7F50;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 768px) {
-  #bakeryproducts .card .card-footer p {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #bakeryproducts .card .card-footer p {
-    font-size: 1rem;
-  }
-}
-
-#bakeryproducts .card .card-footer #buy {
-  font-size: 0.6rem;
-}
-
-@media screen and (min-width: 576px) {
-  #bakeryproducts .card .card-footer #buy {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #bakeryproducts .card .card-footer #buy {
-    font-size: 1rem;
-  }
-}
-
-#featurehero {
-  background: url(../images/backgroundimages/foodbg1.jpg) no-repeat center center/cover;
-  height: 150px;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#featurehero .containertext {
-  text-align: center;
-}
-
-#featurehero .containertext h2 {
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-  padding: 0.5rem;
-}
-
-#featurehero:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-#featureinfo .infotext {
-  padding: 0.5rem;
-  border: 2px solid orange;
-  border-radius: 5px;
-}
-
-#featureinfo .infotext .fas {
-  color: orange;
 }
 
 #footertop {
@@ -511,4 +159,540 @@ body {
 
 #footerbottom .copyright {
   font-size: 0.7rem;
+}
+
+/* Startpage */
+.jumbotron {
+  background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.5rem;
+}
+
+.jumbotron p {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#dividertext h5 {
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: underline;
+}
+
+#featureproducts .card {
+  cursor: pointer;
+}
+
+#featureproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#featureproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#featureproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #featureproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#featureproducts .card .image img {
+  width: 100%;
+}
+
+#featureproducts .card:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#featureproducts .card-footer p {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  #featureproducts .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #featureproducts .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#featurehero {
+  background: url(../images/backgroundimages/foodbg1.jpg) no-repeat center center/cover;
+  height: 150px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#featurehero .containertext {
+  text-align: center;
+}
+
+#featurehero .containertext h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 0.5rem;
+}
+
+#featurehero:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#featureinfo .infotext {
+  padding: 0.5rem;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+
+#featureinfo .infotext .fas {
+  color: orange;
+}
+
+/* Products Page */
+#producthero {
+  background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
+  margin-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #producthero {
+    padding: 4rem 4rem 0 4rem;
+  }
+}
+
+#producthero h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #producthero h2 {
+    font-size: 2rem;
+  }
+}
+
+#meatproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#meatproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#meatproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#meatproducts .card .image img {
+  width: 100%;
+}
+
+#meatproducts .card .card-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  #meatproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meatproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#meatproducts .card .card-footer .buybtn {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #meatproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #meatproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
+}
+
+#birdproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#birdproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#birdproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#birdproducts .card .image img {
+  width: 100%;
+}
+
+#birdproducts .card .card-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  #birdproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #birdproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#birdproducts .card .card-footer .buybtn {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #birdproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #birdproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
+}
+
+#dairyproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#dairyproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#dairyproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#dairyproducts .card .image img {
+  width: 100%;
+}
+
+#dairyproducts .card .card-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  #dairyproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #dairyproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#dairyproducts .card .card-footer .buybtn {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #dairyproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #dairyproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
+}
+
+#fishproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#fishproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#fishproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#fishproducts .card .image img {
+  width: 100%;
+}
+
+#fishproducts .card .card-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  #fishproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #fishproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#fishproducts .card .card-footer .buybtn {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #fishproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #fishproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
+}
+
+#bakeryproducts .card .card-body h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#bakeryproducts .card .card-body h6 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
+}
+
+#bakeryproducts .card .card-body p {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
+}
+
+#bakeryproducts .card .image img {
+  width: 100%;
+}
+
+#bakeryproducts .card .card-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  #bakeryproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #bakeryproducts .card .card-footer p {
+    font-size: 1rem;
+  }
+}
+
+#bakeryproducts .card .card-footer .buybtn {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #bakeryproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #bakeryproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
+}
+
+/* Cashregister Page */
+#carthero {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 576px) {
+  #carthero {
+    font-size: 1rem;
+  }
+}
+
+#carthero .fas {
+  color: #00FF00;
+  margin-right: 0.5rem;
+}
+
+#carttable, #carttable.cartcontainer {
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  #carttable, #carttable.cartcontainer {
+    font-size: 1rem;
+  }
 }
