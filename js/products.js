@@ -208,3 +208,22 @@ function countCart(){
   $("<div>").text(cart.length).appendTo("#qtybadge");
 }
 
+//Newsletter 
+let dialog = $("#dialog").dialog({
+    autoOpen: false,
+    modal: true,
+    buttons: {
+        Ok: function() {
+            $(this).dialog("close");
+        }
+    }
+});
+
+$("#newsletterbtn").on('click', function() {
+    let newsLetterInput = $("#newsletter").val();
+    if (newsLetterInput < 2) {
+        $("#erroremail").show("fast").delay(3000).hide("fast");
+    } else {
+    dialog.dialog("open");
+    }  
+});

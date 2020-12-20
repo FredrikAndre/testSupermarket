@@ -75,7 +75,7 @@
       </table>
     </section>
 
-    <div id="errormessagecart"></div>
+    <div id="errormessagecart" class="alert alert-warning"><span>Din varukorg är tom. Du måste köpa minst en vara.</span>></div>
 
       <!-- Section Inputform -->
       <section id="inputfromuser">
@@ -102,7 +102,7 @@
       </form>
       </section>
       
-      <div id="errormessageform"></div>
+      <div id="errormessageform" class="alert alert-warning"><span>Vänligen fyll i alla fält.</span></div>
 
         <div class="row">
             <div class="col-12 checkoutbtns"></div>
@@ -117,8 +117,15 @@
             <p>Missa inte några av våra erbjudande! Prenumerera på vårat nyhetsbrev.</p>
             <div class="form-inline">
               <input type="email" class="form-control mr-sm-3 mb-2" id="newsletter" placeholder="Skriv in din email">
-              <button type="button" class="btn btn-primary mb-2">Prenumerera</button>
+              <button type="button" id="newsletterbtn" class="btn btn-primary mb-2">Prenumerera</button>
             </div>
+            <div id="dialog" title="Supermarket! Nyhetsbrev">
+              <p>Tack för att du vill prenumerera på vårat nyhetsbrev. Du kommer få
+                  ett mottagandebevis till den mejladress du angivit. Sen är det bara
+                  att njuta av de senaste kampanjerna och varor till extra låga veckopriser!
+              </p>
+            </div>
+            <div id="erroremail" class="alert alert-warning"><span>Vänligen fyll i din korrekta email</span></div>
             <hr>
           </div>
         </div>
@@ -165,7 +172,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="footerbottom">
       <div class="container">

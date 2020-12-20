@@ -45,7 +45,7 @@
     <section id="ordercomplete">
         <div class="row">
             <div class="col-12">
-                <h5 class="ordertext">Tack för din order, </h5>
+                <h5 class="ordertext">Tack för din order!</h5>
                 <p class="ordernumber">Ditt ordernummer är: </p>
                 <p>Vi är glada att du väljer att handla hos Supermarket!</p>
                 <p>Om du upplever något problem med ordern, vänligen kontakta kundtjänst och uppge ditt ordernummer.</p>
@@ -63,8 +63,15 @@
               <p>Missa inte några av våra erbjudande! Prenumerera på vårat nyhetsbrev.</p>
               <div class="form-inline">
                 <input type="email" class="form-control mr-sm-3 mb-2" id="newsletter" placeholder="Skriv in din email">
-                <button type="button" class="btn btn-primary mb-2">Prenumerera</button>
+                <button type="button" id="newsletterbtn" class="btn btn-primary mb-2">Prenumerera</button>
               </div>
+              <div id="dialog" title="Supermarket! Nyhetsbrev">
+                <p>Tack för att du vill prenumerera på vårat nyhetsbrev. Du kommer få
+                    ett mottagandebevis till den mejladress du angivit. Sen är det bara
+                    att njuta av de senaste kampanjerna och varor till extra låga veckopriser!
+                </p>
+              </div>
+              <div id="erroremail" class="alert alert-warning"><span>Vänligen fyll i din korrekta email</span></div>
               <hr>
             </div>
           </div>

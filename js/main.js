@@ -21,7 +21,6 @@ $(function() {
 
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-
     //Navbar
     $("#products").on('click', function() { // Öppnas samma fönster
         window.location.assign('html/products.html');
@@ -78,7 +77,27 @@ $(function() {
     countCart();
 });
 
+//Newsletter 
+let dialog = $("#dialog").dialog({
+    autoOpen: false,
+    modal: true,
+    buttons: {
+        Ok: function() {
+            $(this).dialog("close");
+        }
+    }
+});
 
+$("#newsletterbtn").on('click', function() {
+    let newsLetterInput = $("#newsletter").val();
+    if (newsLetterInput < 2) {
+        $("#erroremail").show("fast").delay(3000).hide("fast");
+    } else {
+    dialog.dialog("open");
+    }  
+});
+
+// Cart. 
 function removeFromCart(i) {
     cart.splice(i, 1);
     generateCartDropDown();

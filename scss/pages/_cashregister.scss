@@ -14,7 +14,7 @@
 }
 
 #carttable {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     @include mobile-large {
         font-size: 1rem;
     }
@@ -43,6 +43,10 @@
     }
 }
 
+#errormessagecart {
+    display: none;
+}
+
 #inputfromuser {
     margin-top: 3rem;
     .formheader {
@@ -62,6 +66,7 @@
     }
 }
 
-#errormessage {
+#errormessageform {
     margin-bottom: 1rem;
+    display: none;
 }

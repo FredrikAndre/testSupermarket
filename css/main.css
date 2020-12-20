@@ -79,7 +79,7 @@
 }
 
 #carttable, #carttable .cartcontainer {
-  font-size: 0.5rem;
+  font-size: 0.45rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -115,6 +115,10 @@
   color: #8B0000;
 }
 
+#errormessagecart {
+  display: none;
+}
+
 #inputfromuser {
   margin-top: 3rem;
 }
@@ -143,8 +147,9 @@
   }
 }
 
-#errormessage {
+#errormessageform {
   margin-bottom: 1rem;
+  display: none;
 }
 
 /* Common Mixins */
@@ -744,6 +749,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#footertop .container #erroremail {
+  display: none;
 }
 
 #footertop .container .contacttext {
