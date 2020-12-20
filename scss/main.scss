@@ -114,3 +114,28 @@ body {
         font-size: 0.7rem;
     }
 }
+
+/* Email Dialog Style */
+.myClass.ui-dialog {
+    font-family: 'Nunito', sans-serif;
+    background-color: #783937FF;
+    .ui-widget-content {
+        color: $whitetext;
+    }
+    .ui-widget-header {
+        background-color: #FC766AFF;
+        color: $whitetext;
+        border: none;
+        .ui-button-icon {
+            background-color: #DC143C;
+        }
+    }
+    .ui-dialog-buttonpane.ui-widget-content {
+        background: #FC766AFF;
+        border: none;
+        .ui-button {
+            color: $whitetext;
+            background-color: #5cb85c;
+        }
+    }
+}

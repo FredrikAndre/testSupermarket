@@ -26,7 +26,8 @@ let dialog = $("#dialog").dialog({
         Ok: function() {
             $(this).dialog("close");
         }
-    }
+    },
+    dialogClass: "myClass"
 });
 
 $("#newsletterbtn").on('click', function() {
