@@ -230,5 +230,6 @@ $("#newsletterbtn").on('click', function() {
         $("#erroremail").show("fast").delay(3000).hide("fast");
     } else {
     dialog.dialog("open");
+    $("#newsletter").val('');
     }  
 });
