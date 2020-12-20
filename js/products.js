@@ -146,6 +146,12 @@ $(function () {
             });
     });
 
+     //cart dropDown
+     generateCartDropDown();
+
+     //cart Count
+     countCart();
+
 });
 
 function generateCart(product) {
@@ -166,3 +172,41 @@ function generateCart(product) {
 
     localStorage.setItem("cart", JSON.stringify(cart)); // 3. Spara cart i localStorage
 };
+
+
+//cart counter
+cart = JSON.parse(localStorage.getItem('cart')) || [];
+$("<div>").text(cart.length).appendTo("#qtybadge");
+
+
+function removeFromCart(i) {
+    cart.splice(i, 1);
+    generateCartDropDown();
+    countCart();
+}
+
+function generateCartDropDown(){
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    $("#droplist").empty();
+    
+    $.each(cart, (i, items) => {
+        $("#droplist").append('<li class="list-group-item d-flex justify-content-between"><div><img class="mx-2" width="100" height="70" src="'+(items.photo)+'"><a href="#" class="cart-link">'+items.title+''+' '+''+items.price+'kr</a></div><a class="align-self-center close-btn" onclick="removeFromCart('+i+')"><i class="fa fa-times"></i></a></li>')
+    }); 
+    $("#droptrigger").hover(function() {
+      $("#droplist").removeClass("closed").addClass("open");
+    }, function() {
+      $("#droplist").removeClass("open").addClass("closed");
+    });
+    $("#droplist").hover(function() {
+      $(".list-group").removeClass("closed").addClass("open")
+    }, function() {
+      $(".list-group").removeClass("open").addClass("closed")
+    });
+}
+
+function countCart(){
+    $("#qtybadge").empty();
+  $("<div>").text(cart.length).appendTo("#qtybadge");
+}
+
