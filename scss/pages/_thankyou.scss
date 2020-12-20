@@ -1,0 +1,37 @@
+@import '../helpers/config';
+@import '../helpers/mixins';
+
+#ordercomplete {
+    @include flexdisplay;
+    min-height: 50vh;
+    @include ipad-small {
+        min-height: 70vh;
+    }
+    background: url(../images/backgroundimages/foodbg3.jpg) no-repeat center center/cover;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+    .ordertext {
+        font-weight: 700;
+        font-size: 1rem;
+        @include mobile-large {
+            font-size: 1.25rem;
+        }
+        @include ipad-large {
+            font-size: 1.8rem;
+        }
+        color: $whitetext;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin: 0 2rem 0.5rem 2rem;
+        font-size: 0.7rem;
+        @include mobile-large {
+            font-size: 0.9rem;
+        }
+        color: $whitetext;
+        text-shadow: $boxshadowtext;
+    }
+}   
