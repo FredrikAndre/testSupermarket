@@ -1,5 +1,3 @@
-let firstName = $("#firstname").val();
-
 let randomOrderNr = Math.round(Math.exp(Math.random()*Math.log(10000000-0+1)))+0;
 
 $(function() {
@@ -19,5 +17,3 @@ $(function() {
     $("<span>").text("#" + randomOrderNr).appendTo(".ordernumber")
 
 });
-
-// ((Math.random() * 100) + 1))
