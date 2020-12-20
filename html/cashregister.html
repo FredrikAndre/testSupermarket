@@ -71,11 +71,40 @@
         <tbody class="cartcontainer">
         </tbody>
       </table>
-    
-        <div class="row">
-            <div class="col-12 paybtn"></div>
+    </section>
+
+    <div id="errormessagecart"></div>
+
+      <!-- Section Inputform -->
+      <section id="inputfromuser">
+        <div class="formheader col-12"><h5>Vänligen fyll i dina uppgifter</h5></div>
+      <form>
+        <div class="form-row" id="customerform">
+          <div class="form-group col-sm-6">
+            <label for="firstname">Förnamn</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Förnamn...">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="lastname">Efternamn</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Efternamn...">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="emailinp">E-mail</label>
+            <input type="email" class="form-control" id="emailinp" placeholder="Din E-mail...">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="adressinp">Adress</label>
+            <input type="text" class="form-control" id="adressinp" placeholder="Din Adress...">
+          </div>
         </div>
+      </form>
       </section>
+      
+      <div id="errormessageform"></div>
+
+        <div class="row">
+            <div class="col-12 checkoutbtns"></div>
+        </div>
     </div>
 
     <!-- Section footer -->

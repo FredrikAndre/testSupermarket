@@ -1,3 +1,5 @@
+let firstName =  $("#firstname").val();
+
 $(function() {
 
     $(".navbar-brand").on('click', function() {
@@ -12,10 +14,8 @@ $(function() {
     $("#checkout").on('click', function() { // Öppnas samma fönster
         window.location.assign('../html/cashregister.html');
     });
+    $("#checkoutdone").html("<span>").text(firstName).appendTo(".ordertext");
 
-    // Should be made into forloop with cart-items.
-    $("<td>").html("Namn").appendTo(".checkoutitems");
-    $("<td>").html("Antal").appendTo(".checkoutitems");
-    $("<td>").html("Pris").appendTo(".checkoutitems");
- 
 });
+
+// ((Math.random() * 100) + 1))

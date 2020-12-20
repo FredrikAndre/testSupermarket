@@ -15,15 +15,13 @@ $(function() {
         window.location.assign('../index.html');
     });
     // Button back to previous Page
-    $("<button>").addClass("btn btn-danger mr-3").attr('id', "topreviouspage").text("Tillbaka").appendTo(".paybtn");
+    $("<button>").addClass("btn btn-danger mr-3").attr('id', "topreviouspage").text("Tillbaka").appendTo(".checkoutbtns");
     $("#topreviouspage").on('click', function() {
         window.history.back();
     });
     // Button checkout to "Thank you Page"
-    $("<button>").addClass("btn btn-success").attr('id', "checkoutdone").text("Betala").appendTo(".paybtn");
-    $("#checkoutdone").on('click', function() {
-        window.location.assign('../html/thankyou.html');
-    }); 
+    $("<button>").addClass("btn btn-success").attr('id', "checkoutdone").text("Betala").appendTo(".checkoutbtns");
+    $("#checkoutdone").on('click', clearCart);
 
 });
 
@@ -79,4 +77,24 @@ function decreaseFromCart(i) {
         removeFromCart(i);
     } 
     generateCheckout();
+}
+
+function clearCart() {
+    let firstName = $("#firstname").val();
+    let lastName = $("#lastname").val();
+    let email = $("#emailinp").val();
+    let adress = $("#adressinp").val();
+    
+    if (cart == 0) {
+        $("#errormessagecart").addClass("alert alert-warning").text("Din varukorg är tom. Du måste köpa minst en vara.");
+        setTimeout(() => $('.alert').remove(), 4000);
+    }
+    else if (firstName === '' || lastName === '' || email === '' || adress === '') {
+        $("#errormessageform").addClass("alert alert-warning").text("Vänligen fyll i alla fält.");
+        setTimeout(() => $('.alert').remove(), 4000);
+    } 
+    else {
+        localStorage.removeItem("cart");
+        window.location.assign('../html/thankyou.html');
+    }
 }
