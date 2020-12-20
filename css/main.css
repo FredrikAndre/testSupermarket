@@ -1,751 +1,727 @@
 /* Common Mixins */
-
-
 /* Navbar Mixins */
-
-
 /* Media Query*/
-
-
 /* Global Rules */
-
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    background-color: #F7F7F8;
-    font-family: 'Nunito', sans-serif;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: #A9A9A9;
-    text-decoration: none;
+  background-color: #F7F7F8;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .navbar .navbar-brand {
-    padding: 0;
+  padding: 0;
 }
 
 .navbar .navbar-brand img {
-    height: 60px;
-    width: 90px;
+  height: 60px;
+  width: 90px;
 }
 
 .navbar #home {
-    color: #000;
-    cursor: pointer;
+  color: #000;
+  cursor: pointer;
 }
 
 .navbar #home:hover {
-    text-decoration: underline;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    opacity: 0.5;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
 .navbar #products {
-    color: #000;
-    cursor: pointer;
+  color: #000;
+  cursor: pointer;
 }
 
 .navbar #products:hover {
-    text-decoration: underline;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    opacity: 0.5;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
 .navbar #checkout {
-    color: #000;
-    cursor: pointer;
+  color: #000;
+  cursor: pointer;
 }
 
 .navbar #checkout:hover {
-    text-decoration: underline;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    opacity: 0.5;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
 #footertop {
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: #A9A9A9;
-    color: #fff;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #A9A9A9;
+  color: #fff;
 }
 
 #footertop .container h6 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #footertop .container .aboutus {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 #footertop .container .form-inline {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #footertop .container .contacttext {
-    list-style: none;
-    font-size: 0.8rem;
+  list-style: none;
+  font-size: 0.8rem;
 }
 
 #footertop .container .contacticons {
-    list-style: none;
+  list-style: none;
 }
 
 #footertop .container .socialicons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
-    #footertop .container .socialicons {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
+  #footertop .container .socialicons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
-    }
+            flex-direction: column;
+  }
 }
 
 #footertop .container .socialicons .fab {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    color: #FCF6F5FF;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #FCF6F5FF;
 }
 
 #footertop .container .socialicons .fab:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 #footertop .container img {
-    height: 100px;
-    width: 160px;
+  height: 100px;
+  width: 160px;
 }
 
 #footerbottom {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 #footerbottom .payicons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
 }
 
 #footerbottom .fab {
-    padding: 0.5rem;
-    font-size: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
 }
 
 #footerbottom .copyright {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
-
 /* Startpage */
-
 .jumbotron {
-    background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
+  background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
 }
 
 .jumbotron h1 {
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.5rem;
 }
 
 .jumbotron p {
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #dividertext h5 {
-    text-transform: uppercase;
-    color: #000;
-    text-decoration: underline;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: underline;
 }
 
 #featureproducts .card {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #featureproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #featureproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #featureproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #featureproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #featureproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #featureproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #featureproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #featureproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #featureproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #featureproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #featureproducts .card:hover {
-    opacity: 0.7;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  opacity: 0.7;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #featureproducts .card-footer p {
-    font-size: 0.6rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: red;
-    color: #fff;
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: red;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-    #featureproducts .card-footer p {
-        font-size: 0.7rem;
-    }
+  #featureproducts .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #featureproducts .card-footer p {
-        font-size: 1rem;
-    }
+  #featureproducts .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #featurehero {
-    background: url(../images/backgroundimages/foodbg1.jpg) no-repeat center center/cover;
-    height: 150px;
-    border-radius: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  background: url(../images/backgroundimages/foodbg1.jpg) no-repeat center center/cover;
+  height: 150px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #featurehero .containertext {
-    text-align: center;
+  text-align: center;
 }
 
 #featurehero .containertext h2 {
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 0.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 0.5rem;
 }
 
 #featurehero:hover {
-    opacity: 0.5;
-    cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 #featureinfo .infotext {
-    padding: 0.5rem;
-    border: 2px solid orange;
-    border-radius: 5px;
+  padding: 0.5rem;
+  border: 2px solid orange;
+  border-radius: 5px;
 }
 
 #featureinfo .infotext .fas {
-    color: orange;
+  color: orange;
 }
 
-
 /* Products Page */
-
 #producthero {
-    background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
-    margin-top: 2rem;
-    padding: 2rem 2rem 0 2rem;
-    border-radius: 5px;
+  background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
+  margin-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
-    #producthero {
-        padding: 4rem 4rem 0 4rem;
-    }
+  #producthero {
+    padding: 4rem 4rem 0 4rem;
+  }
 }
 
 #producthero h2 {
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
-    #producthero h2 {
-        font-size: 2rem;
-    }
+  #producthero h2 {
+    font-size: 2rem;
+  }
 }
 
 #meatproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #meatproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #meatproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #meatproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #meatproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #meatproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #meatproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #meatproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #meatproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #meatproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #meatproducts .card .card-footer p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF7F50;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 768px) {
-    #meatproducts .card .card-footer p {
-        font-size: 0.7rem;
-    }
+  #meatproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #meatproducts .card .card-footer p {
-        font-size: 1rem;
-    }
+  #meatproducts .card .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #meatproducts .card .card-footer .buybtn {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #meatproducts .card .card-footer .buybtn {
-        font-size: 0.8rem;
-    }
+  #meatproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #meatproducts .card .card-footer .buybtn {
-        font-size: 1rem;
-    }
+  #meatproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
 }
 
 #birdproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #birdproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #birdproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #birdproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #birdproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #birdproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #birdproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #birdproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #birdproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #birdproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #birdproducts .card .card-footer p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF7F50;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 768px) {
-    #birdproducts .card .card-footer p {
-        font-size: 0.7rem;
-    }
+  #birdproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #birdproducts .card .card-footer p {
-        font-size: 1rem;
-    }
+  #birdproducts .card .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #birdproducts .card .card-footer .buybtn {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #birdproducts .card .card-footer .buybtn {
-        font-size: 0.8rem;
-    }
+  #birdproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #birdproducts .card .card-footer .buybtn {
-        font-size: 1rem;
-    }
+  #birdproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
 }
 
 #dairyproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #dairyproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #dairyproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #dairyproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #dairyproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #dairyproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #dairyproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #dairyproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #dairyproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #dairyproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #dairyproducts .card .card-footer p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF7F50;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 768px) {
-    #dairyproducts .card .card-footer p {
-        font-size: 0.7rem;
-    }
+  #dairyproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #dairyproducts .card .card-footer p {
-        font-size: 1rem;
-    }
+  #dairyproducts .card .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #dairyproducts .card .card-footer .buybtn {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #dairyproducts .card .card-footer .buybtn {
-        font-size: 0.8rem;
-    }
+  #dairyproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #dairyproducts .card .card-footer .buybtn {
-        font-size: 1rem;
-    }
+  #dairyproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
 }
 
 #fishproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #fishproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #fishproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #fishproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #fishproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #fishproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #fishproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #fishproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #fishproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #fishproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #fishproducts .card .card-footer p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF7F50;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 768px) {
-    #fishproducts .card .card-footer p {
-        font-size: 0.7rem;
-    }
+  #fishproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #fishproducts .card .card-footer p {
-        font-size: 1rem;
-    }
+  #fishproducts .card .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #fishproducts .card .card-footer .buybtn {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #fishproducts .card .card-footer .buybtn {
-        font-size: 0.8rem;
-    }
+  #fishproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #fishproducts .card .card-footer .buybtn {
-        font-size: 1rem;
-    }
+  #fishproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
 }
 
 #bakeryproducts .card .card-body h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 576px) {
-    #bakeryproducts .card .card-body h5 {
-        font-size: 1.25rem;
-    }
+  #bakeryproducts .card .card-body h5 {
+    font-size: 1.25rem;
+  }
 }
 
 #bakeryproducts .card .card-body h6 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
-    #bakeryproducts .card .card-body h6 {
-        font-size: 1rem;
-    }
+  #bakeryproducts .card .card-body h6 {
+    font-size: 1rem;
+  }
 }
 
 #bakeryproducts .card .card-body p {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #bakeryproducts .card .card-body p {
-        font-size: 0.7rem;
-    }
+  #bakeryproducts .card .card-body p {
+    font-size: 0.7rem;
+  }
 }
 
 #bakeryproducts .card .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #bakeryproducts .card .card-footer p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    text-align: center;
-    background-color: #FF7F50;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #FF7F50;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 768px) {
-    #bakeryproducts .card .card-footer p {
-        font-size: 0.7rem;
-    }
+  #bakeryproducts .card .card-footer p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #bakeryproducts .card .card-footer p {
-        font-size: 1rem;
-    }
+  #bakeryproducts .card .card-footer p {
+    font-size: 1rem;
+  }
 }
 
 #bakeryproducts .card .card-footer .buybtn {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 576px) {
-    #bakeryproducts .card .card-footer .buybtn {
-        font-size: 0.8rem;
-    }
+  #bakeryproducts .card .card-footer .buybtn {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #bakeryproducts .card .card-footer .buybtn {
-        font-size: 1rem;
-    }
+  #bakeryproducts .card .card-footer .buybtn {
+    font-size: 1rem;
+  }
 }
 
-
 /* Cashregister Page */
-
 #carthero {
-    margin-top: 2rem;
-    font-size: 0.7rem;
+  margin-top: 2rem;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 576px) {
-    #carthero {
-        font-size: 1rem;
-    }
+  #carthero {
+    font-size: 1rem;
+  }
 }
 
 #carthero .fas {
-    color: #00FF00;
-    margin-right: 0.5rem;
+  color: #00FF00;
+  margin-right: 0.5rem;
 }
 
-#carttable,
-#carttable .cartcontainer {
-    font-size: 0.5rem;
+#carttable, #carttable .cartcontainer {
+  font-size: 0.5rem;
 }
 
 @media screen and (min-width: 576px) {
-    #carttable,
-    #carttable .cartcontainer {
-        font-size: 1rem;
-    }
+  #carttable, #carttable .cartcontainer {
+    font-size: 1rem;
+  }
 }
 
 #carttable .cartcontainer .add {
-    cursor: pointer;
-    color: #63CA00;
-    padding-left: 0.3rem;
+  cursor: pointer;
+  color: #63CA00;
+  padding-left: 0.3rem;
 }
 
 #carttable .cartcontainer .add:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #carttable .cartcontainer .decrease {
-    cursor: pointer;
-    color: #DC143C;
-    padding-left: 0.5rem;
+  cursor: pointer;
+  color: #DC143C;
+  padding-left: 0.5rem;
 }
 
 #carttable .cartcontainer .decrease:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #carttable .cartcontainer .delete {
-    cursor: pointer;
-    color: #8B0000;
+  cursor: pointer;
+  color: #8B0000;
 }
 
 #inputfromuser {
@@ -798,10 +774,11 @@ a:hover {
 }
 
 #ordercomplete .ordertext {
+  font-weight: 700;
   font-size: 1rem;
   color: #fff;
   margin-top: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -817,8 +794,10 @@ a:hover {
 }
 
 #ordercomplete p {
+  margin: 0 2rem 0.5rem 2rem;
   font-size: 0.7rem;
   color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 @media screen and (min-width: 576px) {

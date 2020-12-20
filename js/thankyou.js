@@ -1,4 +1,6 @@
-let firstName =  $("#firstname").val();
+let firstName = $("#firstname").val();
+
+let randomOrderNr = Math.round(Math.exp(Math.random()*Math.log(10000000-0+1)))+0;
 
 $(function() {
 
@@ -14,7 +16,7 @@ $(function() {
     $("#checkout").on('click', function() { // Öppnas samma fönster
         window.location.assign('../html/cashregister.html');
     });
-    $("#ordername").html(firstName).appendTo(".ordertext");
+    $("<span>").text("#" + randomOrderNr).appendTo(".ordernumber")
 
 });
 

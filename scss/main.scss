@@ -586,6 +586,7 @@ body {
     margin-top: 3rem;
     text-align: center;
     .ordertext {
+        font-weight: 700;
         font-size: 1rem;
         @include mobile-large {
             font-size: 1.25rem;
@@ -595,13 +596,15 @@ body {
         }
         color: $whitetext;
         margin-top: 4rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     p {
+        margin: 0 2rem 0.5rem 2rem;
         font-size: 0.7rem;
         @include mobile-large {
             font-size: 0.9rem;
         }
         color: $whitetext;
+        text-shadow: $boxshadowtext;
     }
 }   
