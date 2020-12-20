@@ -14,7 +14,7 @@ $(function() {
     $("#checkout").on('click', function() { // Öppnas samma fönster
         window.location.assign('../html/cashregister.html');
     });
-    $("#checkoutdone").html("<span>").text(firstName).appendTo(".ordertext");
+    $("#ordername").html(firstName).appendTo(".ordertext");
 
 });
 

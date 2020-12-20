@@ -84,7 +84,7 @@ function clearCart() {
     let lastName = $("#lastname").val();
     let email = $("#emailinp").val();
     let adress = $("#adressinp").val();
-    
+
     if (cart == 0) {
         $("#errormessagecart").addClass("alert alert-warning").text("Din varukorg är tom. Du måste köpa minst en vara.");
         setTimeout(() => $('.alert').remove(), 4000);

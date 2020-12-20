@@ -826,31 +826,3 @@ a:hover {
     font-size: 0.9rem;
   }
 }
-
-.btn {
-    margin-top: 5px;
-}
-
-.list-group {
-    display: none;
-}
-
-.open {
-    display: block;
-    transition-delay: 0.2s;
-}
-
-.closed {
-    visibility: hidden;
-    transition-delay: 0.5s;
-}
-
-.cart-ul {
-    top: 57px;
-    z-index: 1000;
-    width: 320px;
-}
-
-.btn-outline-dark:hover {
-    color: #000!important;
-}
