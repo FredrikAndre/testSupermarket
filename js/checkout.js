@@ -36,7 +36,8 @@ $.each(cart, (i, product)=> {
 
     let myTR =  $("<tr>")
     .appendTo(".cartcontainer");
-
+    let imagetd = $("<td>").addClass("imagetd").appendTo(myTR);
+    $("<img>").addClass("checkoutImg").attr("src", product.photo).appendTo(imagetd);
     $("<td>").text(product.title).appendTo(myTR);
     $("<td>").text(product.price + " kr").appendTo(myTR);
 
@@ -54,6 +55,7 @@ $.each(cart, (i, product)=> {
 
     $("<tr>").attr("id", "carttotalrow").appendTo(".cartcontainer");
     $("<th>").text("Total Summa").appendTo("#carttotalrow");
+    $("<td>").appendTo("#carttotalrow");
     $("<td>").appendTo("#carttotalrow");
     $("<td>").appendTo("#carttotalrow");
     $("<td>").text(totalValue + " kr").appendTo("#carttotalrow");
