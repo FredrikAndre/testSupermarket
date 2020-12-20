@@ -85,16 +85,17 @@ function clearCart() {
     let lastName = $("#lastname").val();
     let email = $("#emailinp").val();
     let adress = $("#adressinp").val();
-
+    
     if (cart == 0) {
-        alert("Din varukorg är tom. Du måste köpa minst en vara.");
+        $("#errormessagecart").addClass("alert alert-warning").text("Din varukorg är tom. Du måste köpa minst en vara.");
+        setTimeout(() => $('.alert').remove(), 4000);
     }
     else if (firstName === '' || lastName === '' || email === '' || adress === '') {
-        $("#errormessage").addClass("alert alert-danger").text("Vänligen fyll i alla fält.");
+        $("#errormessageform").addClass("alert alert-warning").text("Vänligen fyll i alla fält.");
         setTimeout(() => $('.alert').remove(), 4000);
-    } else {
-        window.location.assign('../html/thankyou.html');
+    } 
+    else {
         localStorage.removeItem("cart");
+        window.location.assign('../html/thankyou.html');
     }
-
 }

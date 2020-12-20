@@ -551,37 +551,6 @@ body {
     }
 }
 
-/* Thank You Page */
-#checkouttable {
-    font-size: 0.5rem;
-    @include mobile-large {
-        font-size: 1rem;
-    }
-    margin-top: 3rem;
-    background-color: #fff;
-    box-shadow: 5px 10px 18px #888888;
-    border-radius: 10px;
-    .headingtable {
-        text-align: center; 
-    }
-    .footertable {
-        margin: 0 0 0 1rem;
-        h6 {
-        font-size: 0.8rem;
-        @include mobile-large {
-            font-size: 1rem;
-        }
-        }
-        p {
-            text-align: center;
-            font-size: 0.6rem;
-            @include ipad-small {
-                font-size: 0.8rem;
-            }
-        }
-    }
-}   
-
 #inputfromuser {
     margin-top: 3rem;
     .formheader {
@@ -604,3 +573,35 @@ body {
 #errormessage {
     margin-bottom: 1rem;
 }
+
+/* Thank You Page */
+#ordercomplete {
+    min-height: 50vh;
+    @include ipad-small {
+        min-height: 70vh;
+    }
+    background: url(../images/backgroundimages/foodbg3.jpg) no-repeat center center/cover;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+    .ordertext {
+        font-size: 1rem;
+        @include mobile-large {
+            font-size: 1.25rem;
+        }
+        @include ipad-large {
+            font-size: 1.8rem;
+        }
+        color: $whitetext;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 0.7rem;
+        @include mobile-large {
+            font-size: 0.9rem;
+        }
+        color: $whitetext;
+    }
+}   
