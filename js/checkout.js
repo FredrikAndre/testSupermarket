@@ -4,16 +4,19 @@ $(function() {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
     generateCheckout();
 
-    $("#home").on('click', function() { // Öppnas samma fönster
-        window.location.assign('../index.html');
-    });
-    $("#products").on('click', function() { // Öppnas samma fönster
-        window.location.assign('../html/products.html');
-    });
-
     $(".navbar-brand").on('click', function() {
         window.location.assign('../index.html');
     });
+    $("#home").on('click', function() { 
+        window.location.assign('../index.html');
+    });
+    $("#products").on('click', function() {
+        window.location.assign('../html/products.html');
+    });
+    $("#checkout").on('click', function() {
+        window.location.assign('../html/cashregister.html');
+    });
+    
     // Button back to previous Page
     $("<button>").addClass("btn btn-danger mr-3").attr('id', "topreviouspage").text("Tillbaka").appendTo(".checkoutbtns");
     $("#topreviouspage").on('click', function() {

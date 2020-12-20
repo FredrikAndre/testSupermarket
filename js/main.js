@@ -22,16 +22,20 @@ $(function() {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     //Navbar
-    $("#products").on('click', function() { // Öppnas samma fönster
-        window.location.assign('html/products.html');
-    });
-    $("#checkout").on('click', function() { // Öppnas samma fönster
-        window.location.assign('html/cashregister.html');
-    });
-
     $(".navbar-brand").on('click', function() {
         window.location.assign('index.html');
     });
+    $("#home").on('click', function() { 
+        window.location.assign('index.html');
+    });
+    $("#products").on('click', function() {
+        window.location.assign('html/products.html');
+    });
+    $("#checkout").on('click', function() {
+        window.location.assign('html/cashregister.html');
+    });
+
+    
 
     //Jumbotron
     $("<h1>").addClass("display-4").text("Välkommen till Supermarket!").appendTo(".jumbotron");
@@ -95,6 +99,7 @@ $("#newsletterbtn").on('click', function() {
         $("#erroremail").show("fast").delay(3000).hide("fast");
     } else {
     dialog.dialog("open");
+    $("#newsletter").val('');
     }  
 });
 
