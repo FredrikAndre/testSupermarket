@@ -569,7 +569,7 @@ body {
         h6 {
         font-size: 0.8rem;
         @include mobile-large {
-        font-size: 1rem;
+            font-size: 1rem;
         }
         }
         p {
@@ -581,3 +581,26 @@ body {
         }
     }
 }   
+
+#inputfromuser {
+    margin-top: 3rem;
+    .formheader {
+        padding: 0;
+        h5 {
+            font-size: 1rem;
+            @include mobile-large {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .form-row {
+        font-size: 0.6rem;
+        @include mobile-large {
+            font-size: 1rem;
+        }
+    }
+}
+
+#errormessage {
+    margin-bottom: 1rem;
+}

@@ -52,7 +52,6 @@ let allItems = [meat1, meat2, meat3, meat4, bird1, bird2, bird3, bird4, dairy1, 
 let cart = [];
 
 $(function () {
-
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     $("#home").on('click', function() { // Öppnas samma fönster
@@ -136,7 +135,6 @@ $(function () {
         $("<p>").html(items.price + " " + "kr").appendTo(footerDiv);
         $("<button>").addClass("btn btn-success btn-md mt-2 buybtn").text("Lägg i varukorg").appendTo(footerDiv);
     });
-
 
     $.each($(".buybtn"), (i, product) => {
         $(product)

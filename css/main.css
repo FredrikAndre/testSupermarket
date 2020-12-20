@@ -768,3 +768,35 @@ body {
     font-size: 0.8rem;
   }
 }
+
+#inputfromuser {
+  margin-top: 3rem;
+}
+
+#inputfromuser .formheader {
+  padding: 0;
+}
+
+#inputfromuser .formheader h5 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  #inputfromuser .formheader h5 {
+    font-size: 1.25rem;
+  }
+}
+
+#inputfromuser .form-row {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #inputfromuser .form-row {
+    font-size: 1rem;
+  }
+}
+
+#errormessage {
+  margin-bottom: 1rem;
+}
