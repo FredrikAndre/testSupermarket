@@ -1,4 +1,4 @@
-#Create a functional e-commerce webshop with JQuery
+# Create a functional e-commerce webshop with JQuery
 
 -----------------------------------------
 
