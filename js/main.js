@@ -18,6 +18,10 @@ let food = [f1, f2, f3, f4];
 let cart = [];
 
 $(function() {
+    $(".cartbutton").on('click', () => {
+        $("#cartdiv").toggle();
+        generateCartDropDown();
+    });
 
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -34,8 +38,6 @@ $(function() {
     $("#checkout").on('click', function() {
         window.location.assign('html/cashregister.html');
     });
-
-    
 
     //Jumbotron
     $("<h1>").addClass("display-4").text("Välkommen till Supermarket!").appendTo(".jumbotron");
@@ -72,12 +74,9 @@ $(function() {
     });
 
     //Featureinfo
-    $("<i>").addClass("fas fa-exclamation-circle").html("<h6>").text(" På grund av Covid-19 kommer chauffören lämna varorna utanför eran dörr. Ni får ett sms direkt när varorna finns att hämta.").appendTo(".infotext");
+    $("<i>").addClass("fas fa-exclamation-circle").html("<h6>")
+    .text(" På grund av Covid-19 kommer chauffören lämna varorna utanför eran dörr. Ni får ett sms direkt när varorna finns att hämta.").appendTo(".infotext");
 
-    //cart dropDown
-    generateCartDropDown();
-
-    //cart Count
     countCart();
 });
 
@@ -103,35 +102,71 @@ $("#newsletterbtn").on('click', function() {
     }  
 });
 
-// Cart. 
-function removeFromCart(i) {
-    cart.splice(i, 1);
-    generateCartDropDown();
-    countCart();
-}
-
+// Cart 
 function generateCartDropDown(){
-
     localStorage.setItem("cart", JSON.stringify(cart));
-    $("#droplist").empty();
-    
+    $("#cartdiv").html("");
+
+    let totalValue = 0;
+
+    $("<table>").addClass("table").appendTo("#cartdiv");
+    $("<thead>").appendTo("table");
+    let myTR = $("<tr>").appendTo("thead");
+    $("<th>").attr("scope", "col").text("").appendTo(myTR);
+    $("<th>").attr("scope", "col").text("Vara").appendTo(myTR);
+    $("<th>").attr("scope", "col").text("Antal").appendTo(myTR);
+    $("<th>").attr("scope", "col").text("Pris").appendTo(myTR);
+    $("<tbody>").attr("id", "carttablebody").appendTo("table");
+
     $.each(cart, (i, items) => {
-        $("#droplist").append('<li class="list-group-item d-flex justify-content-between"><div><img class="mx-2" width="100" height="70" src="'+(items.photo).replace('..','.')+'"><a href="#" class="cart-link">'+items.title+''+' '+''+items.price+'kr</a></div><a class="align-self-center close-btn" onclick="removeFromCart('+i+')"><i class="fa fa-times"></i></a></li>')
-    }); 
-    $("#droptrigger").hover(function() {
-      $("#droplist").removeClass("closed").addClass("open");
-    }, function() {
-      $("#droplist").removeClass("open").addClass("closed");
+        let myCartRow =  $("<tr>").appendTo("#carttablebody");
+        let cartImgtd = $("<td>").appendTo(myCartRow);
+        $("<img>").addClass("cartimg").attr("src", items.photo).appendTo(cartImgtd);
+        $("<td>").text(items.title).appendTo(myCartRow);
+
+        let addButton = $("<i>").addClass("add fas fa-plus-square").on('click', () => { addToCart(i); });
+        let decreaseButton = $("<i>").addClass("decrease fas fa-minus-square").on('click', () => { decreaseFromCart(i); });
+
+        $("<td>").text(items.quantity).append(addButton).append(decreaseButton).appendTo(myCartRow);
+        $("<td>").text(items.price * items.quantity + " kr").appendTo(myCartRow);
+       
+        totalValue += items.price * items.quantity;
+
     });
-    $("#droplist").hover(function() {
-      $(".list-group").removeClass("closed").addClass("open")
-    }, function() {
-      $(".list-group").removeClass("open").addClass("closed")
-    });
+
+    $("<tr>").attr("id", "carttotalrow").appendTo("#carttablebody");
+    $("<th>").text("Totalt").appendTo("#carttotalrow");
+    $("<td>").appendTo("#carttotalrow");
+    $("<td>").appendTo("#carttotalrow");
+    $("<td>").text(totalValue + " kr").appendTo("#carttotalrow");
+    $("<a>").text("Till Kassan").attr("href", "html/cashregister.html").appendTo("#cartdiv");
+
 }
 
 function countCart(){
     $("#qtybadge").empty();
-  $("<div>").text(cart.length).appendTo("#qtybadge");
+    totalItems = 0;
+    $.each(cart, (i, cartIndex)=> {
+    totalItems += cartIndex.quantity
+    })
+
+  $("<div>").text(totalItems).appendTo("#qtybadge");
 }
 
+function removeFromCart(i) {
+    cart.splice(i, 1);
+    countCart();
+}
+
+function addToCart(i) {
+    cart[i].quantity++;
+    countCart();
+}
+
+function decreaseFromCart(i) {
+    cart[i].quantity--;
+    if (cart[i].quantity < 1) {
+        removeFromCart(i);
+    } 
+    countCart();
+}

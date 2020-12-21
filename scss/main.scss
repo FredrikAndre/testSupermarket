@@ -28,7 +28,6 @@ body {
             width: 90px;
             }
     }
-
     #home {
         @include navlink-spec;
     }
@@ -46,6 +45,49 @@ body {
     }
     #checkout:hover {
         @include hover-navlink;
+    }
+}
+
+#cartdiv {
+    width:90%;
+    max-height: 300px;
+    position: absolute;
+    background-color: snow;
+    border: 1px solid #000;
+    display: none;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 5%;
+    top: 95%;
+    overflow-y: scroll;
+    border-radius: 5px;
+    @include mobile-small {
+        max-height: 400px;
+    }
+    @include mobile-large {
+        font-size: 1rem;
+        max-width: 400px;
+        left: 20%;
+        top: 80%;
+    }
+    #carttablebody {
+        .cartimg {
+            height: 35px;
+            width: 45px;
+        }
+        td {
+            padding: 8px 4px 8px 4px;
+            .add {
+                @include pointer;
+                color: #63CA00;
+                padding-left: 0.3rem;
+            }
+            .decrease {
+                @include pointer;
+                color: #DC143C;
+                padding-left: 0.4rem;
+            }
+        }
     }
 }
 
@@ -114,6 +156,9 @@ body {
     .copyright {
         font-size: 0.7rem;
     }
+    .sidetext {
+        font-size: 0.7rem;
+    }
 }
 
 /* Email Dialog Style */
@@ -140,3 +185,5 @@ body {
         }
     }
 }
+
+

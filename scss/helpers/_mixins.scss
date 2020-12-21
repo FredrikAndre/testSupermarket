@@ -22,6 +22,12 @@
 }
 
 /* Media Query*/
+@mixin mobile-small {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+
 @mixin mobile-large {
     @media screen and (min-width: 576px) {
         @content;

@@ -473,6 +473,42 @@ body {
     transition: all 0.3s ease;
     opacity: 0.5; }
 
+#cartdiv {
+  width: 90%;
+  max-height: 300px;
+  position: absolute;
+  background-color: snow;
+  border: 1px solid #000;
+  display: none;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 5%;
+  top: 95%;
+  overflow-y: scroll;
+  border-radius: 5px; }
+  @media screen and (min-width: 320px) {
+    #cartdiv {
+      max-height: 400px; } }
+  @media screen and (min-width: 576px) {
+    #cartdiv {
+      font-size: 1rem;
+      max-width: 400px;
+      left: 20%;
+      top: 80%; } }
+  #cartdiv #carttablebody .cartimg {
+    height: 35px;
+    width: 45px; }
+  #cartdiv #carttablebody td {
+    padding: 8px 4px 8px 4px; }
+    #cartdiv #carttablebody td .add {
+      cursor: pointer;
+      color: #63CA00;
+      padding-left: 0.3rem; }
+    #cartdiv #carttablebody td .decrease {
+      cursor: pointer;
+      color: #DC143C;
+      padding-left: 0.4rem; }
+
 #footertop {
   margin-top: 3rem;
   padding: 2rem;
@@ -523,6 +559,8 @@ body {
     padding: 0.5rem;
     font-size: 2rem; }
   #footerbottom .copyright {
+    font-size: 0.7rem; }
+  #footerbottom .sidetext {
     font-size: 0.7rem; }
 
 /* Email Dialog Style */
