@@ -9,9 +9,22 @@
           box-sizing: border-box;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
 body {
   background-color: #F7F7F8;
   font-family: 'Nunito', sans-serif;
+}
+
+.btn-outline-dark:hover {
+  color: #000 !important;
 }
 
 .navbar {
@@ -25,6 +38,88 @@ body {
 .navbar .navbar-brand img {
   height: 60px;
   width: 90px;
+}
+
+.navbar .container #droptrigger {
+  padding: 13px;
+}
+
+.navbar .container #droptrigger .closed {
+  visibility: hidden;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.navbar .container #droptrigger .open {
+  display: block;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.navbar .container #droptrigger .list-group-ul {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: .25rem;
+}
+
+.navbar .container #droptrigger .p-absolute {
+  position: absolute;
+}
+
+.navbar .container #droptrigger .cart-ul {
+  top: 64px;
+  z-index: 1000;
+  width: 45%;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: .25rem;
+  margin-top: 0;
+}
+
+.navbar .container #droptrigger .cart-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: .75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .container #droptrigger .cart-ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navbar .container #droptrigger .cart-ul li div img {
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 
 .navbar #home {
@@ -768,3 +863,4 @@ body {
     font-size: 0.8rem;
   }
 }
+/*# sourceMappingURL=main.css.map */

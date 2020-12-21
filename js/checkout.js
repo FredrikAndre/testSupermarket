@@ -2,7 +2,6 @@ let cart = [];
 
 $(function() {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
-    console.log(cart);
     generateCheckout();
 
     $("#home").on('click', function() { // Öppnas samma fönster

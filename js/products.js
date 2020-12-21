@@ -143,8 +143,16 @@ $(function () {
             .on('click', () => {
 
                 generateCart(allItems[i]);
+                generateCartDropDown();
+                countCart();
             });
     });
+
+     //cart dropDown
+     generateCartDropDown();
+
+     //cart Count
+     countCart();
 
 });
 
@@ -166,3 +174,49 @@ function generateCart(product) {
 
     localStorage.setItem("cart", JSON.stringify(cart)); // 3. Spara cart i localStorage
 };
+
+
+//cart counter
+cart = JSON.parse(localStorage.getItem('cart')) || [];
+$("<div>").text(cart.length).appendTo("#qtybadge");
+
+
+function removeFromCart(i) {
+    cart.splice(i, 1);
+    generateCartDropDown();
+    countCart();
+}
+
+function generateCartDropDown(){
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    $("#droplist").empty();
+    let totalValue = 0;
+
+    $.each(cart, (i, product)=> {
+        totalValue += product.price * product.quantity;
+        });
+    
+    $.each(cart, (i, items) => {
+        $("#droplist").append('<li><div><img width="100" height="70" src="'+(items.photo)+'"></div><div><a href="#" class="cart-link">'+items.title+'</div><div>'+items.price+'kr</div></a></div><a class="close-btn" onclick="removeFromCart('+i+')"><i class="fa fa-times"></i></a></li>')
+    }); 
+    if(totalValue > 0){
+        $("#droplist").append('<li><div>Total Summa</div><div>'+totalValue+'</div></li>');
+    }
+    $("#droptrigger").hover(function() {
+      $("#droplist").removeClass("closed").addClass("open");
+    }, function() {
+      $("#droplist").removeClass("open").addClass("closed");
+    });
+    $("#droplist").hover(function() {
+      $(".list-group").removeClass("closed").addClass("open")
+    }, function() {
+      $(".list-group").removeClass("open").addClass("closed")
+    });
+}
+
+function countCart(){
+    $("#qtybadge").empty();
+  $("<div>").text(cart.length).appendTo("#qtybadge");
+}
+

@@ -1,4 +1,5 @@
 /* Common Mixins */
+
 @mixin flexdisplay {
     display: flex;
     justify-content: center;
@@ -9,8 +10,10 @@
     cursor: pointer;
 }
 
+
 /* Navbar Mixins */
-@mixin navlink-spec{
+
+@mixin navlink-spec {
     color: #000;
     cursor: pointer;
 }
@@ -21,7 +24,9 @@
     opacity: 0.5;
 }
 
+
 /* Media Query*/
+
 @mixin mobile-large {
     @media screen and (min-width: 576px) {
         @content;

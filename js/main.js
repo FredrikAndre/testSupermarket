@@ -15,7 +15,12 @@ let f4 = new Foods("Brioche", "Eget Bageri", "Mjuka och färskbakade briochebrö
 
 let food = [f1, f2, f3, f4];
 
+let cart = [];
+
 $(function() {
+
+    cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 
     //Navbar
     $("#products").on('click', function() { // Öppnas samma fönster
@@ -65,5 +70,51 @@ $(function() {
 
     //Featureinfo
     $("<i>").addClass("fas fa-exclamation-circle").html("<h6>").text(" På grund av Covid-19 kommer chauffören lämna varorna utanför eran dörr. Ni får ett sms direkt när varorna finns att hämta.").appendTo(".infotext");
-    
+
+    //cart dropDown
+    generateCartDropDown();
+
+    //cart Count
+    countCart();
 });
+
+
+function removeFromCart(i) {
+    cart.splice(i, 1);
+    generateCartDropDown();
+    countCart();
+}
+
+function generateCartDropDown(){
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    $("#droplist").empty();
+    let totalValue = 0;
+
+    $.each(cart, (i, product)=> {
+        totalValue += product.price * product.quantity;
+        });
+    $.each(cart, (i, items) => {
+        $("#droplist").append('<li><div><img width="100" height="70" src="'+(items.photo).replace('..','.')+'"></div><div><a href="#" class="cart-link">'+items.title+'</div><div>'+items.price+'kr</div></a></div><a class="close-btn" onclick="removeFromCart('+i+')"><i class="fa fa-times"></i></a></li>')
+    }); 
+    if(totalValue > 0){
+        $("#droplist").append('<li><div>Total Summa</div><div>'+totalValue+'</div></li>');
+    }
+
+    $("#droptrigger").hover(function() {
+      $("#droplist").removeClass("closed").addClass("open");
+    }, function() {
+      $("#droplist").removeClass("open").addClass("closed");
+    });
+    $("#droplist").hover(function() {
+      $(".list-group").removeClass("closed").addClass("open")
+    }, function() {
+      $(".list-group").removeClass("open").addClass("closed")
+    });
+}
+
+function countCart(){
+    $("#qtybadge").empty();
+  $("<div>").text(cart.length).appendTo("#qtybadge");
+}
+

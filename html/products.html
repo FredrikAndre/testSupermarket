@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,178 +11,182 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" />
     <link rel="stylesheet" href="../css/main.css" />
 </head>
+
 <body>
     <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-md navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="../images/logotruck1.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerMenu">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" id="home" href="#">Start</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" id="products" href="#">Produkter <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="checkout" href="#">Kassa</a>
-            </li>
-          </ul>
+            <button type="button" id="droptrigger" class="btn btn-outline-dark btn-md m-auto" id="cartbutton">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-pill badge-dark" id="qtybadge"></span>
+        <ul class="list-group-ul p-absolute cart-ul closed" id="droplist"></ul>
+         </button>
+            <a class="navbar-brand" href="#"><img src="../images/logotruck1.png"></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home" href="#">Start</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="products" href="#">Produkter <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="checkout" href="#">Kassa</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-  </nav>
- 
-  <!-- Section Product Navbar-->
-  <div class="container">
+    </nav>
 
-  <section id="producthero">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h2>Här hittar du vårat härliga utbud av mat från alla världens hörn</h2>
-      </div>
+    <!-- Section Product Navbar-->
+    <div class="container">
+
+        <section id="producthero">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Här hittar du vårat härliga utbud av mat från alla världens hörn</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <div class="row">
+            <div class="col-sm-12 text-center mt-3">
+                <h5>Kött & Chark</h5>
+            </div>
+        </div>
+        <section id="meatproducts">
+            <div class="featuremeat row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-sm-12 text-center mt-3">
+                <h5>Kyckling & Fågel</h5>
+            </div>
+        </div>
+        <section id="birdproducts">
+            <div class="featurebird row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-sm-12 text-center mt-3">
+                <h5>Mejeri & Ost</h5>
+            </div>
+        </div>
+        <section id="dairyproducts">
+            <div class="featuredairy row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-sm-12 text-center mt-3">
+                <h5>Fisk & Skaldjur</h5>
+            </div>
+        </div>
+        <section id="fishproducts">
+            <div class="featurefish row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-sm-12 text-center mt-3">
+                <h5>Bröd & Bageri</h5>
+            </div>
+        </div>
+        <section id="bakeryproducts">
+            <div class="featurebakery row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
+            </div>
+        </section>
+
     </div>
-  </section>
-
-    <!-- Products -->
-    <div class="row">
-      <div class="col-sm-12 text-center mt-3">
-        <h5>Kött & Chark</h5>
-      </div>
-    </div>
-    <section id="meatproducts">
-      <div class="featuremeat row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
-      </div>
-    </section>
-
-    <div class="row">
-      <div class="col-sm-12 text-center mt-3">
-        <h5>Kyckling & Fågel</h5>
-      </div>
-    </div>
-    <section id="birdproducts">
-      <div class="featurebird row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
-      </div>
-    </section>
-
-    <div class="row">
-      <div class="col-sm-12 text-center mt-3">
-        <h5>Mejeri & Ost</h5>
-      </div>
-    </div>
-    <section id="dairyproducts">
-      <div class="featuredairy row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
-      </div>
-    </section>
-
-    <div class="row">
-      <div class="col-sm-12 text-center mt-3">
-        <h5>Fisk & Skaldjur</h5>
-      </div>
-    </div>
-    <section id="fishproducts">
-      <div class="featurefish row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
-      </div>
-    </section>
-
-    <div class="row">
-      <div class="col-sm-12 text-center mt-3">
-        <h5>Bröd & Bageri</h5>
-      </div>
-    </div>
-    <section id="bakeryproducts">
-      <div class="featurebakery row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-2">
-      </div>
-    </section>
-
-  </div>
 
     <!-- Section footer -->
     <section id="footertop">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 d-none d-md-block text-center">
-            <p>Missa inte några av våra erbjudande! Prenumerera på vårat nyhetsbrev.</p>
-            <div class="form-inline">
-              <input type="email" class="form-control mr-sm-3 mb-2" id="newsletter" placeholder="Skriv in din email">
-              <button type="button" class="btn btn-primary mb-2">Prenumerera</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 d-none d-md-block text-center">
+                    <p>Missa inte några av våra erbjudande! Prenumerera på vårat nyhetsbrev.</p>
+                    <div class="form-inline">
+                        <input type="email" class="form-control mr-sm-3 mb-2" id="newsletter" placeholder="Skriv in din email">
+                        <button type="button" class="btn btn-primary mb-2">Prenumerera</button>
+                    </div>
+                    <hr>
+                </div>
             </div>
-            <hr>
-          </div>
+            <div class="row mt-3">
+                <div class="col-md-3 d-none d-md-block text-left"><img src="../images/logotruck1.png"></div>
+                <div class="col-md-3 text-left">
+                    <h6>Kontakt</h6>
+                    <ul class="contacttext">
+                        <li>Kundtjänst öppettider</li>
+                        <li>Helgfri Måndag - Fredag:</li>
+                        <li>07:00 - 19:00</li>
+                        <ul class="contacticons">
+                            <li><span><i class="fas fa-envelope"></span></i> info@supermarket.se</li>
+                            <li><span><i class="fas fa-phone"></span></i> 020-1234 123</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-left">
+                    <h6>Om oss</h6>
+                    <p class="aboutus">Supermarket! utmanar de stora blocken i handeln med grymma kampanjprodukter, en justare prisbild och marknadens bredaste sortiment. Eftersom vi endast finns till på nätet kan vi hålla ned kostnaderna. När du handlar hos oss ska du
+                        förvänta dig mer än vad de traditionella kedjorna brukar kunna erbjuda.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <ul class="socialicons m-lg-0">
+                        <li>
+                            <i class="fab fa-instagram-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-3 d-none d-md-block text-left"><img src="../images/logotruck1.png"></div>
-          <div class="col-md-3 text-left"><h6>Kontakt</h6>
-            <ul class="contacttext">
-              <li>Kundtjänst öppettider</li>
-              <li>Helgfri Måndag - Fredag:</li>
-              <li>07:00 - 19:00</li>
-              <ul class="contacticons">
-                <li><span><i class="fas fa-envelope"></span></i> info@supermarket.se</li>
-                <li><span><i class="fas fa-phone"></span></i> 020-1234 123</li>
-              </ul>
-            </ul>
-          </div>
-          <div class="col-md-3 text-left">
-            <h6>Om oss</h6>
-            <p class="aboutus">Supermarket! utmanar de stora blocken i handeln med grymma
-            kampanjprodukter, en justare prisbild och marknadens
-            bredaste sortiment. Eftersom vi endast finns till på nätet kan vi hålla ned kostnaderna.
-            När du handlar hos oss ska du förvänta dig mer än vad de traditionella kedjorna brukar
-            kunna erbjuda.</p>
-          </div>
-          <div class="col-md-3 text-center">
-            <ul class="socialicons m-lg-0">
-              <li>
-                <i class="fab fa-instagram-square"></i>
-              </li>
-              <li>
-                <i class="fab fa-youtube-square"></i>
-              </li>
-              <li>
-                <i class="fab fa-facebook-square"></i>
-              </li>
-              <li>
-                <i class="fab fa-twitter-square"></i>
-              </li>
-              <li>
-                <i class="fab fa-linkedin"></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="footerbottom">
-      <div class="container">
-      <div class="row align-items-center p-4">
-        <div class="col-md-4">
-          <ul class="payicons m-lg-0">
-              <li>
-                <i class="fab fa-cc-visa"></i>
-              </li>
-              <li>
-                <i class="fab fa-cc-amex"></i>
-              </li>
-              <li>
-                <i class="fab fa-cc-mastercard"></i>
-              </li>
-              <li>
-                <i class="fab fa-cc-diners-club"></i>
-              </li>
-          </ul>
+        <div class="container">
+            <div class="row align-items-center p-4">
+                <div class="col-md-4">
+                    <ul class="payicons m-lg-0">
+                        <li>
+                            <i class="fab fa-cc-visa"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-cc-amex"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-cc-mastercard"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-cc-diners-club"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="copyright m-lg-0 text-center">Copyright &copy 2020 All Rights Reserved </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="sidetext m-lg-0 text-center">Lorem ipsum dolor.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <p class="copyright m-lg-0 text-center">Copyright &copy 2020 All Rights Reserved </p>
-        </div>
-        <div class="col-md-4">
-          <p class="sidetext m-lg-0 text-center">Lorem ipsum dolor.</p>
-        </div>
-      </div>
-    </div>
     </section>
 
     <!-- Javascript plugins -->
@@ -191,4 +196,5 @@
     <script src="../js/products.js"></script>
 
 </body>
+
 </html>
