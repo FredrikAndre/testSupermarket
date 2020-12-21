@@ -1,7 +1,13 @@
-/* Global Rules */
-$whitetext: #fff;
-$boxshadowtext: 2px 2px 4px #000000;
+@import 'pages/thankyou';
+@import 'pages/cashregister';
+@import 'pages/productpage';
+@import 'pages/startpage';
+@import 'helpers/config';
+@import 'helpers/mixins';
 
+/* Global Rules */
+
+/* Hej */
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +20,7 @@ body {
 }
 
 .navbar {
-    background-color: #00239CFF;;
-    
+    background-color: #fff;
     .navbar-brand {
         padding: 0;
             img {
@@ -23,279 +28,68 @@ body {
             width: 90px;
             }
     }
-
     #home {
-        color: #F7F7F8;
-        cursor: pointer;
+        @include navlink-spec;
     }
     #home:hover {
-        text-decoration: underline;
-        transition: all 0.3s ease;
-        opacity: 0.5;
+        @include hover-navlink;
     }
-
     #products {
-        color: #F7F7F8;
-        cursor: pointer;
+        @include navlink-spec;
     }
     #products:hover {
-        text-decoration: underline;
-        transition: all 0.3s ease;
-        opacity: 0.5;
+        @include hover-navlink;
     }
     #checkout {
-        color: #F7F7F8;
-        cursor: pointer;
+        @include navlink-spec;
     }
     #checkout:hover {
-        text-decoration: underline;
-        transition: all 0.3s ease;
-        opacity: 0.5;
+        @include hover-navlink;
     }
 }
 
-.jumbotron {
-    background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover;
-        h1 {
-            color: $whitetext;
-            text-shadow: $boxshadowtext;
-            font-size: 2.5rem;
-        }
-        p {
-            color: $whitetext;
-            text-shadow: $boxshadowtext;
-        }
-}
-
-#dividertext {
-    h5 {
-        text-transform: uppercase;
-        color: #000;
-        text-decoration: underline;
-    }
-}
-
-#featureproducts {
-    .card {
-        cursor: pointer;
-            .card-body {
-                p {
-                    font-size: 0.7rem;
-                }
-            }
-            .image {
-                img {
-                    width: 100%;
-                }
-            }
-    }
-    .card:hover {
-        opacity: 0.7;
-        transform: scale(1.05);
-        transition: all 0.3s ease;
-    }
-    .card-footer {
-        p {
-            font-size: 0.6rem;
-            margin-bottom: 0;
-            text-align: center;
-            background-color: red;
-            color: $whitetext;
-            @media screen and (min-width: 768px) {
-                font-size: 0.7rem;
-            }
-            @media screen and (min-width: 992px) {
-                font-size: 1rem;
-            }
-        }       
-    }
-}
-
-#meatproducts {
-    .card {
-        .card-body {
-            p {
-                font-size: 0.6rem;
-            }
-        }
-        .image {
-            img {
-                width: 100%;
-                }
-            }
-        
-        .card-footer {
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: #FF7F50;
-                color: $whitetext;
-                text-shadow: $boxshadowtext;
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7rem;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
-
-#birdproducts {
-    .card {
-        .card-body {
-            p {
-                font-size: 0.6rem;
-            }
-        }
-        .image {
-            img {
-                width: 100%;
-                }
-            }
-        .card-footer {
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: #FF7F50;
-                color: $whitetext;
-                text-shadow: $boxshadowtext;
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7rem;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
-
-#dairyproducts {
-    .card {
-        .card-body {
-            p {
-                font-size: 0.6rem;
-            }
-        }
-        .image {
-            img {
-                width: 100%;
-                }
-            }
-        .card-footer {
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: #FF7F50;
-                color: $whitetext;
-                text-shadow: $boxshadowtext;
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7rem;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
-
-#fishproducts {
-    .card {
-        .card-body {
-            p {
-                font-size: 0.6rem;
-            }
-        }
-        .image {
-            img {
-                width: 100%;
-                }
-            }
-        .card-footer {
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: #FF7F50;
-                color: $whitetext;
-                text-shadow: $boxshadowtext;
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7rem;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
-
-#bakeryproducts {
-    .card {
-        .card-body {
-            p {
-                font-size: 0.6rem;
-            }
-        }
-        .image {
-            img {
-                width: 100%;
-                }
-            }
-        .card-footer {
-            p {
-                font-size: 0.8rem;
-                margin-bottom: 0;
-                text-align: center;
-                background-color: #FF7F50;
-                color: $whitetext;
-                text-shadow: $boxshadowtext;
-                @media screen and (min-width: 768px) {
-                    font-size: 0.7rem;
-                }
-                @media screen and (min-width: 992px) {
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
-
-#featurehero {
-    background: url(../images/backgroundimages/foodbg1.jpg) no-repeat center center/cover;
-    height: 150px;
+#cartdiv {
+    width:90%;
+    max-height: 300px;
+    position: absolute;
+    background-color: snow;
+    border: 1px solid #000;
+    display: none;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 5%;
+    top: 95%;
+    overflow-y: scroll;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .containertext {
-        text-align: center;
-        h2 {
-        color: $whitetext;
-        text-shadow: $boxshadowtext;
-        padding: 0.5rem;
-        }
+    a {
+        margin: 1rem;
     }
-}
-
-#featurehero:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-#featureinfo {
-    .infotext {
-        padding: 0.5rem;
-        border: 2px solid orange;
-        border-radius: 5px;
-        .fas {
-            color: orange;
+    @include mobile-small {
+        max-height: 400px;
+    }
+    @include mobile-large {
+        font-size: 1rem;
+        max-width: 400px;
+        left: 20%;
+        top: 80%;
+    }
+    #carttablebody {
+        .cartimg {
+            height: 35px;
+            width: 45px;
+        }
+        td {
+            padding: 8px 4px 8px 4px;
+            .add {
+                @include pointer;
+                color: #63CA00;
+                padding-left: 0.3rem;
+            }
+            .decrease {
+                @include pointer;
+                color: #DC143C;
+                padding-left: 0.4rem;
+            }
         }
     }
 }
@@ -303,21 +97,21 @@ body {
 #footertop {
     margin-top: 3rem;
     padding: 2rem;
-    background-color: #00239CFF;
+    background-color: #A9A9A9;
     color: $whitetext;
     .container {
-
         h6 {
             font-weight: 700;
         }
         .aboutus {
             font-size: 0.8rem;
         }
-
         .form-inline {
             justify-content: center;
         }
-
+        #erroremail {
+            display: none;
+        }
         .contacttext {
             list-style: none;
             font-size: 0.8rem;
@@ -325,13 +119,10 @@ body {
         .contacticons {
             list-style: none;
         }
-
         .socialicons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexdisplay;
             list-style: none;
-            @media screen and(min-width: 768px) {
+            @include ipad-small {
                 flex-direction: column;
             }
             .fab {
@@ -345,7 +136,6 @@ body {
                 cursor: pointer;
             }
         }
-
         img {
             height: 100px;
             width: 160px;
@@ -356,20 +146,47 @@ body {
 #footerbottom {
     background-color: #000;
     color: $whitetext;
-
     .payicons {
         display: flex;
         justify-content: center;
         align-items: center;
         list-style: none;
     }
-        
-        .fab {
-            padding: 0.5rem;
-            font-size: 2rem;
-        }
-        
+    .fab {
+        padding: 0.5rem;
+        font-size: 2rem;
+    }   
     .copyright {
         font-size: 0.7rem;
     }
+    .sidetext {
+        font-size: 0.7rem;
+    }
 }
+
+/* Email Dialog Style */
+.myClass.ui-dialog {
+    font-family: 'Nunito', sans-serif;
+    background-color: #783937FF;
+    .ui-widget-content {
+        color: $whitetext;
+    }
+    .ui-widget-header {
+        background-color: #FC766AFF;
+        color: $whitetext;
+        border: none;
+        .ui-button-icon {
+            background-color: #DC143C;
+        }
+    }
+    .ui-dialog-buttonpane.ui-widget-content {
+        background: #FC766AFF;
+        border: none;
+        .ui-button {
+            color: $whitetext;
+            background-color: #5cb85c;
+        }
+    }
+}
+
+
