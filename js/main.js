@@ -161,6 +161,7 @@ function removeFromCart(i) {
 function addToCart(i) {
     cart[i].quantity++;
     countCart();
+    generateCartDropDown();
 }
 
 function decreaseFromCart(i) {
@@ -169,4 +170,5 @@ function decreaseFromCart(i) {
         removeFromCart(i);
     } 
     countCart();
+    generateCartDropDown();
 }

@@ -486,6 +486,8 @@ body {
   top: 95%;
   overflow-y: scroll;
   border-radius: 5px; }
+  #cartdiv a {
+    margin: 1rem; }
   @media screen and (min-width: 320px) {
     #cartdiv {
       max-height: 400px; } }
