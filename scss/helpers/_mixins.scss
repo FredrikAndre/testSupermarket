@@ -1,0 +1,47 @@
+/* Common Mixins */
+@mixin flexdisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pointer {
+    cursor: pointer;
+}
+
+/* Navbar Mixins */
+@mixin navlink-spec{
+    color: #000;
+    cursor: pointer;
+}
+
+@mixin hover-navlink {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+/* Media Query*/
+@mixin mobile-small {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mobile-large {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin ipad-small {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin ipad-large {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
