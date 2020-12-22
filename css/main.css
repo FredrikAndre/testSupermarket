@@ -1,5 +1,6 @@
 /* Common Mixins */
 /* Navbar Mixins */
+/* Product Page Mixin */
 /* Media Query*/
 #ordercomplete {
   display: flex;
@@ -37,6 +38,7 @@
 
 /* Common Mixins */
 /* Navbar Mixins */
+/* Product Page Mixin */
 /* Media Query*/
 #carthero {
   margin-top: 2rem;
@@ -112,6 +114,7 @@
 
 /* Common Mixins */
 /* Navbar Mixins */
+/* Product Page Mixin */
 /* Media Query*/
 #producthero {
   background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
@@ -173,6 +176,10 @@
     #meatproducts .card .card-footer .buybtn {
       font-size: 1rem; } }
 
+#meatproducts .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease; }
+
 #birdproducts .card .card-body h5 {
   font-size: 1rem; }
   @media screen and (min-width: 576px) {
@@ -216,6 +223,10 @@
   @media screen and (min-width: 992px) {
     #birdproducts .card .card-footer .buybtn {
       font-size: 1rem; } }
+
+#birdproducts .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease; }
 
 #dairyproducts .card .card-body h5 {
   font-size: 1rem; }
@@ -261,6 +272,10 @@
     #dairyproducts .card .card-footer .buybtn {
       font-size: 1rem; } }
 
+#dairyproducts .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease; }
+
 #fishproducts .card .card-body h5 {
   font-size: 1rem; }
   @media screen and (min-width: 576px) {
@@ -304,6 +319,10 @@
   @media screen and (min-width: 992px) {
     #fishproducts .card .card-footer .buybtn {
       font-size: 1rem; } }
+
+#fishproducts .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease; }
 
 #bakeryproducts .card .card-body h5 {
   font-size: 1rem; }
@@ -349,8 +368,13 @@
     #bakeryproducts .card .card-footer .buybtn {
       font-size: 1rem; } }
 
+#bakeryproducts .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease; }
+
 /* Common Mixins */
 /* Navbar Mixins */
+/* Product Page Mixin */
 /* Media Query*/
 .jumbotron {
   background: url(../images/backgroundimages/christmasfood1.jpg) no-repeat center center/cover; }
@@ -386,11 +410,10 @@
         font-size: 0.7rem; } }
   #featureproducts .card .image img {
     width: 100%; }
-
-#featureproducts .card:hover {
-  opacity: 0.7;
-  transform: scale(1.05);
-  transition: all 0.3s ease; }
+  #featureproducts .card:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: all 0.3s ease; }
 
 #featureproducts .card-footer p {
   font-size: 0.6rem;
@@ -432,6 +455,7 @@
 
 /* Common Mixins */
 /* Navbar Mixins */
+/* Product Page Mixin */
 /* Media Query*/
 /* Global Rules */
 * {
@@ -486,7 +510,7 @@ body {
   overflow-y: scroll;
   border-radius: 5px; }
   #cartdiv a {
-    margin: 1rem; }
+    margin: 0 12px; }
   @media screen and (min-width: 320px) {
     #cartdiv {
       max-height: 400px; } }
@@ -569,20 +593,20 @@ body {
     font-size: 0.7rem; }
 
 /* Newsletter Email Dialog Style */
-.myClass.ui-dialog {
+.newsletterdialog.ui-dialog {
   font-family: 'Nunito', sans-serif;
   background-color: #783937FF; }
-  .myClass.ui-dialog .ui-widget-content {
+  .newsletterdialog.ui-dialog .ui-widget-content {
     color: #fff; }
-  .myClass.ui-dialog .ui-widget-header {
+  .newsletterdialog.ui-dialog .ui-widget-header {
     background-color: #FC766AFF;
     color: #fff;
     border: none; }
-    .myClass.ui-dialog .ui-widget-header .ui-button-icon {
+    .newsletterdialog.ui-dialog .ui-widget-header .ui-button-icon {
       background-color: #DC143C; }
-  .myClass.ui-dialog .ui-dialog-buttonpane.ui-widget-content {
+  .newsletterdialog.ui-dialog .ui-dialog-buttonpane.ui-widget-content {
     background: #FC766AFF;
     border: none; }
-    .myClass.ui-dialog .ui-dialog-buttonpane.ui-widget-content .ui-button {
+    .newsletterdialog.ui-dialog .ui-dialog-buttonpane.ui-widget-content .ui-button {
       color: #fff;
       background-color: #5cb85c; }

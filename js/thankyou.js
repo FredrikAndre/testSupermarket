@@ -32,7 +32,7 @@ let dialog = $("#dialog").dialog({
             $(this).dialog("close");
         }
     },
-    dialogClass: "myClass"
+    dialogClass: "newsletterdialog"
 });
 
 $("#newsletterbtn").on('click', function() {

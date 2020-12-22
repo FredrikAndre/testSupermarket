@@ -61,7 +61,7 @@ body {
     overflow-y: scroll;
     border-radius: 5px;
     a {
-        margin: 1rem;
+        margin: 0 12px;
     }
     @include mobile-small {
         max-height: 400px;
@@ -168,7 +168,7 @@ body {
 }
 
 /* Newsletter Email Dialog Style */
-.myClass.ui-dialog {
+.newsletterdialog.ui-dialog {
     font-family: 'Nunito', sans-serif;
     background-color: #783937FF;
     .ui-widget-content {

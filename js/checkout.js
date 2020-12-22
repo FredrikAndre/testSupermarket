@@ -28,6 +28,28 @@ $(function() {
 
 });
 
+//Newsletter 
+let dialog = $("#dialog").dialog({
+    autoOpen: false,
+    modal: true,
+    buttons: {
+        Ok: function() {
+            $(this).dialog("close");
+        }
+    },
+    dialogClass: "newsletterdialog"
+});
+
+$("#newsletterbtn").on('click', function() {
+    let newsLetterInput = $("#newsletter").val();
+    if (newsLetterInput < 2) {
+        $("#erroremail").show("fast").delay(3000).hide("fast");
+    } else {
+    dialog.dialog("open");
+    $("#newsletter").val('');
+    }  
+});
+
 function generateCheckout() {
 
 localStorage.setItem("cart", JSON.stringify(cart));
@@ -100,25 +122,3 @@ function clearCart() {
         window.location.assign('../html/thankyou.html');
     }
 }
-
-//Newsletter 
-let dialog = $("#dialog").dialog({
-    autoOpen: false,
-    modal: true,
-    buttons: {
-        Ok: function() {
-            $(this).dialog("close");
-        }
-    },
-    dialogClass: "myClass"
-});
-
-$("#newsletterbtn").on('click', function() {
-    let newsLetterInput = $("#newsletter").val();
-    if (newsLetterInput < 2) {
-        $("#erroremail").show("fast").delay(3000).hide("fast");
-    } else {
-    dialog.dialog("open");
-    $("#newsletter").val('');
-    }  
-});

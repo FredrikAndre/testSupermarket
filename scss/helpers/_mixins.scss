@@ -21,6 +21,12 @@
     opacity: 0.5;
 }
 
+/* Product Page Mixin */
+@mixin hover-productcard {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 /* Media Query*/
 @mixin mobile-small {
     @media screen and (min-width: 320px) {

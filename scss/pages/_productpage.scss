@@ -72,6 +72,9 @@
                 }
             }           
         }
+        &:hover {
+            @include hover-productcard;
+        }
     }
 }
 
@@ -126,6 +129,9 @@
                     font-size: 1rem;
                 }
             }           
+        }
+        &:hover {
+            @include hover-productcard;
         }
     }
 }
@@ -182,6 +188,9 @@
                 }
             }           
         }
+        &:hover {
+            @include hover-productcard;
+        }
     }
 }
 
@@ -237,6 +246,9 @@
                 }
             }            
         }
+        &:hover {
+            @include hover-productcard;
+        }
     }
 }
 
@@ -291,6 +303,9 @@
                     font-size: 1rem;
                 }
             }           
+        }
+        &:hover {
+            @include hover-productcard;
         }
     }
 }

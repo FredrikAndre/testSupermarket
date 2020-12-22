@@ -50,12 +50,15 @@
                     width: 100%;
                 }
             }
+        &:hover {
+            opacity: 0.7;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
     }
-    .card:hover {
-        opacity: 0.7;
-        transform: scale(1.05);
-        transition: all 0.3s ease;
-    }
+    // .card:hover {
+        
+    // }
     .card-footer {
         p {
             font-size: 0.6rem;
