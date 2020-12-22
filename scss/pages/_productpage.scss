@@ -1,0 +1,311 @@
+@import '../helpers/config';
+@import '../helpers/mixins';
+
+#producthero {
+    background: url(../images/backgroundimages/foodbg2.jpg) no-repeat center center/cover;
+    margin-top: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 5px;
+    @include ipad-small {
+        padding: 4rem 4rem 0 4rem;
+    }
+    h2 {
+        color: $whitetext;
+        text-shadow: $boxshadowtext;
+        font-size: 0.8rem;
+        @include ipad-small {
+          font-size: 2rem;
+        }
+    }
+}
+
+#meatproducts {
+    .card {
+        .card-body {
+            h5 {
+                font-size: 1rem;
+                @include mobile-large {
+                    font-size: 1.25rem;
+                }
+            }
+            h6 {
+                font-size: 0.8rem;
+                @include mobile-large {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                }
+            }
+        
+        .card-footer {
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                text-align: center;
+                background-color: #FF7F50;
+                color: $whitetext;
+                text-shadow: $boxshadowtext;
+                @include ipad-small {
+                    font-size: 0.7rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }
+            .buybtn {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.8rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }           
+        }
+        &:hover {
+            @include hover-productcard;
+        }
+    }
+}
+
+#birdproducts {
+    .card {
+        .card-body {
+            h5 {
+                font-size: 1rem;
+                @include mobile-large {
+                    font-size: 1.25rem;
+                }
+            }
+            h6 {
+                font-size: 0.8rem;
+                @include mobile-large {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                }
+            }
+        .card-footer {
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                text-align: center;
+                background-color: #FF7F50;
+                color: $whitetext;
+                text-shadow: $boxshadowtext;
+                @include ipad-small {
+                    font-size: 0.7rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }
+            .buybtn {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.8rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }           
+        }
+        &:hover {
+            @include hover-productcard;
+        }
+    }
+}
+
+#dairyproducts {
+    .card {
+        .card-body {
+            h5 {
+                font-size: 1rem;
+                @include mobile-large {
+                    font-size: 1.25rem;
+                }
+            }
+            h6 {
+                font-size: 0.8rem;
+                @include mobile-large {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                }
+            }
+        .card-footer {
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                text-align: center;
+                background-color: #FF7F50;
+                color: $whitetext;
+                text-shadow: $boxshadowtext;
+                @include ipad-small {
+                    font-size: 0.7rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }
+            .buybtn {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.8rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }           
+        }
+        &:hover {
+            @include hover-productcard;
+        }
+    }
+}
+
+#fishproducts {
+    .card {
+        .card-body {
+            h5 {
+                font-size: 1rem;
+                @include mobile-large {
+                    font-size: 1.25rem;
+                }
+            }
+            h6 {
+                font-size: 0.8rem;
+                @include mobile-large {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                }
+            }
+        .card-footer {
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                text-align: center;
+                background-color: #FF7F50;
+                color: $whitetext;
+                text-shadow: $boxshadowtext;
+                @include ipad-small {
+                    font-size: 0.7rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }
+            .buybtn {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.8rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }            
+        }
+        &:hover {
+            @include hover-productcard;
+        }
+    }
+}
+
+#bakeryproducts {
+    .card {
+        .card-body {
+            h5 {
+                font-size: 1rem;
+                @include mobile-large {
+                    font-size: 1.25rem;
+                }
+            }
+            h6 {
+                font-size: 0.8rem;
+                @include mobile-large {
+                    font-size: 1rem;
+                }
+            }
+            p {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                }
+            }
+        .card-footer {
+            p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+                text-align: center;
+                background-color: #FF7F50;
+                color: $whitetext;
+                text-shadow: $boxshadowtext;
+                @include ipad-small {
+                    font-size: 0.7rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }
+            .buybtn {
+                font-size: 0.6rem;
+                @include mobile-large {
+                    font-size: 0.8rem;
+                }
+                @include ipad-large {
+                    font-size: 1rem;
+                }
+            }           
+        }
+        &:hover {
+            @include hover-productcard;
+        }
+    }
+}
