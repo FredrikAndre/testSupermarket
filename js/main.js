@@ -120,7 +120,7 @@ function generateCartDropDown(){
     $.each(cart, (i, items) => {
         let myCartRow =  $("<tr>").appendTo("#carttablebody");
         let cartImgtd = $("<td>").appendTo(myCartRow);
-        $("<img>").addClass("cartimg").attr("src", items.photo).appendTo(cartImgtd);
+        $("<img>").addClass("cartimg").attr("src", items.photo.replace('../', './')).appendTo(cartImgtd);
         $("<td>").text(items.title).appendTo(myCartRow);
 
         let addButton = $("<i>").addClass("add fas fa-plus-square").on('click', () => { addToCart(i); });

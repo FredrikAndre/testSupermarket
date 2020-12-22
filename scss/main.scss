@@ -29,21 +29,21 @@ body {
     }
     #home {
         @include navlink-spec;
-    }
-    #home:hover {
-        @include hover-navlink;
+        &:hover {
+            @include hover-navlink;
+        }
     }
     #products {
         @include navlink-spec;
-    }
-    #products:hover {
-        @include hover-navlink;
+        &:hover {
+            @include hover-navlink;
+        }
     }
     #checkout {
         @include navlink-spec;
-    }
-    #checkout:hover {
-        @include hover-navlink;
+        &:hover {
+            @include hover-navlink;
+        }
     }
 }
 
@@ -51,7 +51,7 @@ body {
     width:90%;
     max-height: 300px;
     position: absolute;
-    background-color: snow;
+    background-color: #FFFAFA;
     border: 1px solid #000;
     display: none;
     font-size: 0.8rem;
@@ -74,7 +74,7 @@ body {
     }
     @include desktop {
         left: 25%;
-        top: 75;
+        top: 75%;
     }
     #carttablebody {
         .cartimg {
@@ -167,7 +167,7 @@ body {
     }
 }
 
-/* Email Dialog Style */
+/* Newsletter Email Dialog Style */
 .myClass.ui-dialog {
     font-family: 'Nunito', sans-serif;
     background-color: #783937FF;

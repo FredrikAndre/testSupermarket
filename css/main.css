@@ -76,14 +76,14 @@
     cursor: pointer;
     color: #63CA00;
     padding-left: 0.3rem; }
-  #carttable .cartcontainer .add:hover {
-    transform: scale(1.3); }
+    #carttable .cartcontainer .add:hover {
+      transform: scale(1.3); }
   #carttable .cartcontainer .decrease {
     cursor: pointer;
     color: #DC143C;
     padding-left: 0.4rem; }
-  #carttable .cartcontainer .decrease:hover {
-    transform: scale(1.3); }
+    #carttable .cartcontainer .decrease:hover {
+      transform: scale(1.3); }
   #carttable .cartcontainer .delete {
     cursor: pointer;
     color: #8B0000; }
@@ -453,30 +453,30 @@ body {
   .navbar #home {
     color: #000;
     cursor: pointer; }
-  .navbar #home:hover {
-    text-decoration: underline;
-    transition: all 0.3s ease;
-    opacity: 0.5; }
+    .navbar #home:hover {
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      opacity: 0.5; }
   .navbar #products {
     color: #000;
     cursor: pointer; }
-  .navbar #products:hover {
-    text-decoration: underline;
-    transition: all 0.3s ease;
-    opacity: 0.5; }
+    .navbar #products:hover {
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      opacity: 0.5; }
   .navbar #checkout {
     color: #000;
     cursor: pointer; }
-  .navbar #checkout:hover {
-    text-decoration: underline;
-    transition: all 0.3s ease;
-    opacity: 0.5; }
+    .navbar #checkout:hover {
+      text-decoration: underline;
+      transition: all 0.3s ease;
+      opacity: 0.5; }
 
 #cartdiv {
   width: 90%;
   max-height: 300px;
   position: absolute;
-  background-color: snow;
+  background-color: #FFFAFA;
   border: 1px solid #000;
   display: none;
   font-size: 0.8rem;
@@ -499,7 +499,7 @@ body {
   @media screen and (min-width: 1200px) {
     #cartdiv {
       left: 25%;
-      top: 75; } }
+      top: 75%; } }
   #cartdiv #carttablebody .cartimg {
     height: 35px;
     width: 45px; }
@@ -568,7 +568,7 @@ body {
   #footerbottom .sidetext {
     font-size: 0.7rem; }
 
-/* Email Dialog Style */
+/* Newsletter Email Dialog Style */
 .myClass.ui-dialog {
   font-family: 'Nunito', sans-serif;
   background-color: #783937FF; }
