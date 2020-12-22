@@ -434,7 +434,6 @@
 /* Navbar Mixins */
 /* Media Query*/
 /* Global Rules */
-/* Hej */
 * {
   margin: 0;
   padding: 0;
@@ -497,6 +496,10 @@ body {
       max-width: 400px;
       left: 20%;
       top: 80%; } }
+  @media screen and (min-width: 1200px) {
+    #cartdiv {
+      left: 25%;
+      top: 75; } }
   #cartdiv #carttablebody .cartimg {
     height: 35px;
     width: 45px; }

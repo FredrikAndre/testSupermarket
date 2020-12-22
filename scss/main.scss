@@ -7,7 +7,6 @@
 
 /* Global Rules */
 
-/* Hej */
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +71,10 @@ body {
         max-width: 400px;
         left: 20%;
         top: 80%;
+    }
+    @include desktop {
+        left: 25%;
+        top: 75;
     }
     #carttablebody {
         .cartimg {

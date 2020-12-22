@@ -1,5 +1,6 @@
 # Create a functional e-commerce webshop with JQuery
 
+*Named testSupermarket*
 -----------------------------------------
 
 **Installation:**
@@ -12,13 +13,13 @@ Projectfolder testSupermarket - index.html, .gitignore, README.md, gulpfile.js, 
 Use JQuery from their webpage, and also JQueryUI. 
 We used bootstrap as layout. Link in from their webpage. 
 
-- scss/ - Use SCSS for styling and responsivness. Subfolders for different pages and helpers like mixins. 
+- scss/ - Use SCSS for styling and responsivness. Subfolders for different pages and helpers like mixins.
 - css/ - Do not use, write all styles in SCSS folders. This is only for link in html folders. 
 - html/ - All other pages than index goes here. 
 - images/ - all images here, subfolders too
 - js/ - All javascript files in here, inluding subpages to main. 
 - jqueryUI - To use JQueryUI. 
-- node_modules - To use GULP to minify scss. 
+- node_modules - To use GULP to minify scss. This is in .gitignore, as to not send to github. 
 - jsconfig.json - To get VS code help with JQuery. 
 
 **Website structure**
@@ -62,7 +63,7 @@ This project was made by Fredrik André, Erik Åström, Arash Raji.
 -------------------------------------------
 
 **Contributing**
-To add additional features to the website, download site using `git pull origin master`, then
+If you want to add additional features to the website, download site using `git pull origin master`, then
 create your own branch using name: `git checkout -b feature/yourbranchnamehere`. Push to github using
 git push, and add comment to README about your changes. Notice you have to be approved first by github-page owner to contribute. 
  
@@ -70,4 +71,4 @@ git push, and add comment to README about your changes. Notice you have to be ap
 
 *Comments:*
 
-Add own comment here.
+If you do want to change anything, please write comment here on what was changed. 

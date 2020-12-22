@@ -25,7 +25,6 @@ $(function() {
 
     cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    //Navbar
     $(".navbar-brand").on('click', function() {
         window.location.assign('index.html');
     });
@@ -102,7 +101,7 @@ $("#newsletterbtn").on('click', function() {
     }  
 });
 
-// Cart 
+// Shopping Cart 
 function generateCartDropDown(){
     localStorage.setItem("cart", JSON.stringify(cart));
     $("#cartdiv").html("");
